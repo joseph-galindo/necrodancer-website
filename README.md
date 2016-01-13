@@ -16,7 +16,7 @@ Host the dist directory however you prefer (MAMP, WAMP, grunt connect, etc.)
 
 Run sasswatch.sh and jadewatch.sh in the background to watch+build sass->css and jade->html as you edit
 
-```cd my-cool-projects-folder/necrodancer-website```
+```cd my-cool-projects-folder/necrodancer-website```  
 ```./sasswatch.sh &```  
 ```./jadewatch.sh &```
 
