@@ -1,23 +1,30 @@
-# necrodancer-website README
+# necrodancer-website README  
 
-## Requirements:
+## Requirements:  
 
 nodejs (for npm)  
-ruby (for rubygems)
+grunt (for dev work/assembling build)  
 
-jade (npm package):  
-```npm install jade```   
-sass (ruby gem):  
-```gem install sass```  
+## Current build:  
 
-## Current build:
+After installing nodejs, npm should be installed. From there you will need to install Grunt if you have not done so already. To do this run this in your CLI of choice:  
 
-Host the dist directory however you prefer (MAMP, WAMP, grunt connect, etc.)
+```npm install -g grunt-cli```  
 
-Run sasswatch.sh and jadewatch.sh in the background to watch+build sass->css and jade->html as you edit
+Afterwards, clone this repo and run this within the project root.  
 
-```cd my-cool-projects-folder/necrodancer-website```  
-```./sasswatch.sh &```  
-```./jadewatch.sh &```
+```npm i```  
 
-This build is a little sloppy and can definitely be improved, originally wanted one massive watch script but I'm pretty sure the sass watch prevents the jade watch from ever executing in a sequential script, hence the separation for now
+This will install all the node modules needed, as listed in ```package.json```.  
+Once that's complete, just run  
+
+```grunt```  
+
+to assemble the build and automatically serve it in your browser, or you can run  
+
+```grunt prod```  
+
+to assemble the build in ```dist/``` without serving it.  
+
+The grunt build will probably evolve with more fine grain file control (as assets, etc. are brought in), and also probably include jshint, but for now this is a pretty decent starting build.  
+
