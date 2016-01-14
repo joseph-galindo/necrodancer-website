@@ -79,10 +79,6 @@ module.exports = function(grunt) {
 		    styles: {
 		        files: ['src/styles/**/*.scss'],
 		        tasks: ['styles:build']
-		    },
-		    other_files: {
-		    	files: ['**', '!src/markup/**/*.jade', '!src/markup/pages/**/*.jade', '!src/styles/**/*.scss'],
-		    	tasks: ['newer:copy']
 		    }
 		},
 
