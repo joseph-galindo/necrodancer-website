@@ -1,4 +1,4 @@
-module.export = function(grunt) {
+module.exports = function(grunt) {
 	
 	//cfg of stock tasks
 	grunt.initConfig({
@@ -6,13 +6,13 @@ module.export = function(grunt) {
 		copy: {
 			build: {
 				cwd: 'src',
-				src: ['**', '!**/*.jade', '!**/*.scss'],
+				src: ['**', '!markup/**', '!styles/**'],
 				dest: 'dist',
 				expand:true
 			}
 		},
 
-		jade {
+		jade: {
 			build: {
 				options: {
 					pretty:true,
@@ -61,42 +61,43 @@ module.export = function(grunt) {
 		},
 
 		watch: {
-			build: {
-			    options: {
-			        dot: true,
-			        interrupt: false,
-			        livereload: true,
-			        livereloadOnError: false,
-			        spawn: false
-			    },
-			    markup: {
-			        files: ['src/markup/**/*.jade', '!src/markup/pages/**/*.jade'],
-			        tasks: ['markup:build']
-			    },
-			    markup_pages: {
-			        files: ['src/markup/pages/**/*.jade'],
-			        tasks: ['markup:watch']
-			    },
-			    styles: {
-			        files: ['src/styles/**/*.scss'],
-			        tasks: ['styles:build']
-			    },
-			    other_files: {
-			    	files: ['**', '!src/markup/**/*.jade', '!src/markup/pages/**/*.jade', '!src/styles/**/*.scss'],
-			    	tasks: ['newer:copy']
-			    }
-			}
+		    options: {
+		        dot: true,
+		        interrupt: false,
+		        livereload: true,
+		        livereloadOnError: false,
+		        spawn: false
+		    },
+		    markup: {
+		        files: ['src/markup/**/*.jade', '!src/markup/pages/**/*.jade'],
+		        tasks: ['markup:build']
+		    },
+		    markup_pages: {
+		        files: ['src/markup/pages/**/*.jade'],
+		        tasks: ['markup:watch']
+		    },
+		    styles: {
+		        files: ['src/styles/**/*.scss'],
+		        tasks: ['styles:build']
+		    },
+		    other_files: {
+		    	files: ['**', '!src/markup/**/*.jade', '!src/markup/pages/**/*.jade', '!src/styles/**/*.scss'],
+		    	tasks: ['newer:copy']
+		    }
 		},
 
 		connect: {
 			build: {
-			    hostname: '*',
-			    // hostname: '<%= grunt.config.get("ip") %>',
-			    port: 3000,
-			    base: 'dist/',
-			    appName: 'open',
-			    open: true,
-			    livereload: true
+				options: {
+				    hostname: '*',
+				    // hostname: '<%= grunt.config.get("ip") %>',
+				    port: 3000,
+				    base: 'dist/',
+				    target: 'http://localhost:3000',
+				    appName: 'open',
+				    open: true,
+				    livereload: true
+				}
 			}
 		}
 
@@ -110,7 +111,6 @@ module.export = function(grunt) {
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('connect-livereload');
 	grunt.loadNpmTasks('grunt-newer');
 
 	//defining of custom tasks for CLI use
