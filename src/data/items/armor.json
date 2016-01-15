@@ -1,0 +1,16 @@
+{
+	"gi": {
+		"damage_type":"multiply_weapon",
+		"damage_amount": 2
+	},
+
+	"leather": {
+		"damage_type": "none",
+		"damage_amount": 0
+	},
+
+	"chainmail": {
+		"damage_type": "none",
+		"damage_amount": 0
+	}
+}

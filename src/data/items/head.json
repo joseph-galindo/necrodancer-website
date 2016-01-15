@@ -1,0 +1,16 @@
+{
+	"sunglasses": {
+		"damage_type":"add",
+		"damage_amount": 1
+	},
+
+	"crown of thorns": {
+		"damage_type": "none",
+		"damage_amount": 0
+	},
+
+	"crown of greed": {
+		"damage_type": "none",
+		"damage_amount": 0
+	}
+}

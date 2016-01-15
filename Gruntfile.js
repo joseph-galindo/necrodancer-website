@@ -79,6 +79,10 @@ module.exports = function(grunt) {
 		    styles: {
 		        files: ['src/styles/**/*.scss'],
 		        tasks: ['styles:build']
+		    },
+		    data: {
+		    	files: ['src/data/**'],
+		    	tasks: ['data:watch']
 		    }
 		},
 
@@ -115,6 +119,8 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('styles:build', ['sass', 'autoprefixer']);
 	grunt.registerTask('styles:watch', ['newer:sass', 'newer:autoprefixer']);
+
+	grunt.registerTask('data:watch', ['newer:copy']);
 
 	grunt.registerTask('default','Creates build and serves it for dev purposes', ['clean','copy', 'markup:build', 'styles:build', 'connect', 'watch']);
 	grunt.registerTask('prod','Creates prod build in dist directory', ['clean','copy', 'markup:build', 'styles:build']);
