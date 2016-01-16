@@ -16,7 +16,18 @@ module.exports = function(grunt) {
 			build: {
 				options: {
 					pretty:true,
-					debug:false
+					debug:false,
+					basedir: 'src/markup',
+					data: function(dest,src) {
+						var yfm = require('assemble-yaml');
+						//console.log('./' + src);
+						return {
+							from: src,
+							to: dest,
+							fileName: src[0].replace('src/markup/pages/', '').replace('.jade', '').split('/').pop(),
+							page: yfm.extractJSON('./' + src)
+						};
+					}
 				},
 				files: [{
 					cwd: 'src/markup/pages',

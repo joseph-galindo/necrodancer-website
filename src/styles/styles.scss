@@ -1,7 +1,14 @@
-body {
-	width:100%;
+//import any util styles
 
-	h1 {
-		font-size:30px;
-	}
+@import 'util/_reset.scss';
+
+//import styles for any pages
+
+@import 'pages/_index.scss';
+@import 'pages/_items.scss';
+
+//any custom high-level scss goes here - anything below here will overwrite any of the scss imported above this
+
+body {
+	background-color:rgba(0,0,0,.4)
 }
