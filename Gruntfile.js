@@ -125,6 +125,10 @@ module.exports = function(grunt) {
 		    data: {
 		    	files: ['src/data/**'],
 		    	tasks: ['data:watch']
+		    },
+		    js: {
+		    	files: ['src/js/**'],
+		    	tasks: ['newer:copy']
 		    }
 		},
 
