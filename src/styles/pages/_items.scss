@@ -1,4 +1,220 @@
 .section--items {
-	article {
+
+	.listing {
+		margin-left:350px;
+		background-color:rgba(159,187,255,0.25);
+		padding:0px 10px 50px;
+
+		h1 {
+			margin:0;
+		}
+
+		.container {
+			position:relative;
+
+			border-top: 1px solid #ECE6FF;
+			margin-top:20px;
+
+			h2 {
+				position:absolute;
+				left:0;
+				top:5px;
+			}
+
+			//general thumbnail css styles
+
+			.thumbnail {
+				position:relative;
+				display:inline-block;
+				cursor:pointer;
+			}
+
+			//head container
+
+			&.head {
+
+				//define images, etc here
+
+				.thumbnail {
+
+					margin-top:35px;
+
+					&.blast_helm {
+
+						width:44px;
+						height:42px;
+
+						background-image: url(../img/items/head/head_blast_helm.png);
+						background-size:cover;
+
+						background-position:0 0;
+					}
+
+					&.circlet {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/head/head_circlet_telepathy.png);
+						background-size:cover;
+
+						background-position:0 0;
+					}
+				}
+			}
+
+			//shovel container
+
+			&.shovel {
+
+				//define images, etc here
+
+				.thumbnail {
+
+					margin-top:35px;
+
+					&.base_shovel {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/shovel/shovel_basic.png);
+						background-size:cover;
+
+						background-position:0 0;
+					}
+
+					&.titanium_shovel {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/shovel/shovel_titanium.png);
+						background-size:cover;
+
+						background-position:0 0;
+					}
+
+					&.obsidian_shovel {
+
+						width:52px;
+						height:52px;
+
+						background-image: url(../img/items/shovel/shovel_obsidian.png);
+						background-size:156px 104px;
+
+						background-position:0 0;
+
+						&.two {
+							background-position:-52px 0;
+						}
+
+						&.three {
+							background-position:-104px 0;
+						}
+					}
+
+					&.glass_shovel {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/shovel/shovel_glass.png);
+						background-size:cover;
+
+						background-position:0 0;
+					}
+
+					&.glass_shard_shovel {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/shovel/shovel_shard.png);
+						background-size:cover;
+
+						background-position:0 0;
+					}
+
+					&.pickaxe {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/shovel/pickaxe.png);
+						background-size:cover;
+
+						background-position:0 0;
+					}
+
+					&.glass_shard_shovel {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/shovel/shovel_crystal.png);
+						background-size:cover;
+
+						background-position:0 0;
+					}
+
+					&.glass_shard_shovel {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/shovel/shovel_blood.png);
+						background-size:cover;
+
+						background-position:0 0;
+					}
+				}
+			}
+
+			//torch container
+
+			&.torch {
+
+				//define images, etc here
+
+				.thumbnail {
+
+					margin-top:35px;
+
+					&.base_torch {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/torch/torch_1.png);
+						background-size:cover;
+
+						background-position:0 3px;
+					}
+
+					&.bright_torch {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/torch/torch_2.png);
+						background-size:cover;
+
+						background-position:0 1px;
+					}
+
+					&.lum_torch {
+
+						width:48px;
+						height:48px;
+
+						background-image: url(../img/items/torch/torch_3.png);
+						background-size:cover;
+
+						background-position:0 0;
+					}
+				}
+			}
+		}
 	}
 }

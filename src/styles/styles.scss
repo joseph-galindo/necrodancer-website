@@ -15,7 +15,7 @@
 //any custom high-level scss goes here - anything below here will overwrite any of the scss imported above this
 
 body {
-	background-color:rgba(58, 71, 107, 0.72);
+	background-color:#26314C;
 	font-family:'Open Sans', sans-serif;
 	font-size:22px;
 	color:#ECE6FF;
@@ -25,10 +25,11 @@ body {
 		font-size:56px;
 
 		margin: 20px 0 20px auto;
+
+		text-decoration:underline;
 	}
 
 	article {
-		margin: 0 5%;
 
 		p {
 			margin: 20px 0 20px 0;
