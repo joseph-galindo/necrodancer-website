@@ -24,30 +24,30 @@ $(document).ready(function() {
 
 			//if items page, start a timer to flip through the obsidian states every second
 			setInterval(function() {
-				obs_rotation($('.obsidian_shovel'));
-				obs_rotation($('.obsidian_torch'));
-				obs_rotation($('.obsidian_armor'));
-				obs_rotation($('.dagger.obsidian'));
-				obs_rotation($('.longsword.obsidian'));
-				obs_rotation($('.spear.obsidian'));
-				obs_rotation($('.broadsword.obsidian'));
-				obs_rotation($('.cat.obsidian'));
-				obs_rotation($('.flail.obsidian'));
-				obs_rotation($('.whip.obsidian'));
-				obs_rotation($('.bow.obsidian'));
-				obs_rotation($('.rapier.obsidian'));
+				obs_rotation($('.callout.obsidian_shovel'));
+				obs_rotation($('.callout.obsidian_torch'));
+				obs_rotation($('.callout.obsidian_armor'));
+				obs_rotation($('.callout.dagger.obsidian'));
+				obs_rotation($('.callout.longsword.obsidian'));
+				obs_rotation($('.callout.spear.obsidian'));
+				obs_rotation($('.callout.broadsword.obsidian'));
+				obs_rotation($('.callout.cat.obsidian'));
+				obs_rotation($('.callout.flail.obsidian'));
+				obs_rotation($('.callout.whip.obsidian'));
+				obs_rotation($('.callout.bow.obsidian'));
+				obs_rotation($('.callout.rapier.obsidian'));
 
-				xbow_rotation($('.xbow.base'));
-				xbow_rotation($('.xbow.blood'));
-				xbow_rotation($('.xbow.gold'));
-				xbow_rotation($('.xbow.tit'));
-				xbow_rotation($('.xbow.glass'));
-				xbow_rotation($('.lute'));
+				xbow_rotation($('.callout.xbow.base'));
+				xbow_rotation($('.callout.xbow.blood'));
+				xbow_rotation($('.callout.xbow.gold'));
+				xbow_rotation($('.callout.xbow.tit'));
+				xbow_rotation($('.callout.xbow.glass'));
+				xbow_rotation($('.callout.lute'));
 
-				obsxbow_rotation($('.xbow.obsidian'));
+				obsxbow_rotation($('.callout.xbow.obsidian'));
 
-				guns_rotation($('.blunderbuss'));
-				guns_rotation($('.rifle'));
+				guns_rotation($('.callout.blunderbuss'));
+				guns_rotation($('.callout.rifle'));
 			},1000);
 		}
 	}
