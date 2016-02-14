@@ -77,13 +77,16 @@ module.exports = function(grunt) {
 		            style: 'expanded',
 		            sourceMap: true
 		        },
-		        files: [{
-		            expand: true,
-		            src: ['**/*.scss', '!**/_*.scss'],
-		            cwd: 'src/styles',
-		            dest: 'dist/css',
-		            ext: '.css'
-		        }]
+		        // files: [{
+		        //     expand: true,
+		        //     src: ['**/*.scss', '!**/_*.scss'],
+		        //     cwd: 'src/styles',
+		        //     dest: 'dist/css',
+		        //     ext: '.css'
+		        // }]
+		        files: {
+		        	'dist/css/styles.css' : 'src/styles/styles.scss'
+		        }
 		    }
 		},
 

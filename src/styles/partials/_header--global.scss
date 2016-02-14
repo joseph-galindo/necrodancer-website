@@ -7,6 +7,9 @@ header {
 	background: linear-gradient(to bottom, #3f4c6b 0%,#3f4c6b 100%);
 	box-shadow:1px 3px 4px 0 rgba(0,0,0,.4);
 
+	z-index:200;
+	//place above article content
+
 	nav {
 
 		font-family: 'Cabin', sans-serif;
