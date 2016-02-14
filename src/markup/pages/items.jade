@@ -20,15 +20,115 @@ block content
 			.weapon-type-container
 
 				.thumbnail.dagger.base
+					span
+						.callout.thumbnail.dagger.base
+						p.title Dagger
+						p.hint "Dagger, throwable"
+						ul.explanation
+							li Does one damage on contact with an enemy that is immediately adjacent to the character
+							li Can be thrown, but will stop at the first enemy it cannot kill, or a barrel/crate
+							li The starting weapon for all characters except Eli, Dove, and Bolt
 				.thumbnail.dagger.blood
+					span
+						.callout.thumbnail.dagger.blood
+						p.title Blood Dagger
+						p.hint "Kill to heal, low health = +damage"
+						ul.explanation
+							li Does one damage to all enemies if health is at one heart or more
+							li While the character is at 1/2 a heart, the dagger will glow and deal infinite damage
+							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+							li Can be thrown, but will stop at the first enemy it cannot kill, or a barrel/crate 
 				.thumbnail.dagger.gold
+					span
+						.callout.thumbnail.dagger.gold
+						p.title Gold Dagger
+						p.hint "High dmg after gold pickup"
+						ul.explanation
+							li Does one damage to all enemies if the character has not just picked up gold
+							li When the character picks up gold, the dagger will glow. If they attack on the next beat, the dagger will deal infinite damage
+							li Adds +1 to the gold count an enemy drops (pre-multiplier). 
+								ul.explanation
+									li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold dagger they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
+							li Can be thrown, but will stop at the first enemy it cannot kill, or a barrel/crate 
 				.thumbnail.dagger.tit
+					span
+						.callout.thumbnail.dagger.tit
+						p.title Titanium Dagger
+						p.hint "2 Damage"
+						ul.explanation
+							li Does two damage on contact with an enemy that is immediately adjacent to the character
+							li Can be thrown, but will stop at the first enemy it cannot kill, or a barrel/crate
 				.thumbnail.dagger.obsidian
+					span
+						.callout.thumbnail.dagger.obsidian
+						p.title Obsidian Dagger
+						p.hint "Multiplier-based damage"
+						ul.explanation
+							li Does 1-3 damage on contact with an enemy that is immediately adjacent to the character
+								ul.explanation
+									li If the coin multiplier is at 1x (0 kills chained), the dagger does 1 damage
+									li If the coin multiplier is at 2x (2-4 kills chained), the dagger does 2 damage
+									li If the coin multiplier is at 3x (5+ kills chained), the dagger does 3 damage
+							li Thrown obsidian weapons will deal damage based on multiplier at the time of enemy contact, not multiplier at the time the weapon was thrown
+							li Can be thrown, but will stop at the first enemy it cannot kill, or a barrel/crate
 				.thumbnail.dagger.glass
+					span
+						.callout.thumbnail.dagger.glass
+						p.title Glass Dagger
+						p.hint "4 Damage, Breakable"
+						ul.explanation
+							li Does four damage on contact with an enemy that is immediately adjacent to the character
+							li Can be thrown, but will stop at the first enemy it cannot kill, or a barrel/crate
+								ul.explanation
+									li "Stopping" for this dagger will actually break it, turning it into the Glass Shard
 				.thumbnail.dagger.glass_shard
+					span
+						.callout.thumbnail.dagger.glass_shard
+						p.title Glass Shard
+						p.hint "Glass Shard"
+						ul.explanation
+							li Functionally, simply a reskin of the base Dagger
+							li Does one damage on contact with an enemy that is immediately adjacent to the character
+							li Can be thrown, but will stop at the first enemy it cannot kill, or a barrel/crate
+							li Will be dropped at the character's feet when damaged while holding any glass weapon
 				.thumbnail.dagger.jeweled
+					span
+						.callout.thumbnail.dagger.jeweled
+						p.title Jeweled Dagger
+						p.hint "5 Damage"
+						ul.explanation
+							li Does five damage on contact with an enemy that is immediately adjacent to the character
+							li Can be thrown, but will stop at the first enemy it cannot kill, or a barrel/crate
+							li Originally acted like the base Dagger, except it would have one chance to give 3x the gold an enemy would normally drop (if it dealt the killing blow), and would then transform into the base Dagger
 				.thumbnail.dagger.phasing
+					span
+						.callout.thumbnail.dagger.phasing
+						p.title Dagger of Phasing
+						p.hint "Phasing attack, 2 dmg"
+						ul.explanation
+							li Does two phasing damage on contact with an enemy that is immediately adjacent to the character
+							li Can be thrown; unlike other daggers, it will never stop until it hits the level boundary: throwing into shop walls is dangerous!
+							li Does phasing damage; this means it does piercing damage, as well as phasing-exclusive damage (listed below)
+								ul.explanation
+									li Underground moles
+									li Damages Coral Riff in its initial phase 
+									li Damages King Conga in his throne phase
+									li Damages Dead Ringer directly in both phases
 				.thumbnail.dagger.frost
+					span
+						.callout.thumbnail.dagger.frost
+						p.title Dagger of Frost
+						p.hint "Freeze Enemies, Kill Frozen Enemies, Piercing"
+						ul.explanation
+							li When contacting an enemy that is immediately adjacent to the character for the first time, it deals one piercing damage and freezes the enemy for 3 beats
+							li When contacting an enemy that is immediately adjacent to the character that has been frozen by any means, it will deal infinite damage
+							li Can be thrown, but will stop at the first enemy it cannot kill, or a barrel/crate
+							li Does piercing damage; this means it damages several enemies that normally cannot be damaged directly
+								ul.explanation
+									li Armadillos that are rolling
+									li Skeleton Knights
+									li Skeleton Riders
+									li Blademasters
 
 			.weapon-type-container
 
@@ -64,6 +164,11 @@ block content
 				.thumbnail.cat.gold
 				.thumbnail.cat.tit
 				.thumbnail.cat.obsidian
+					span
+						.callout.thumbnail.cat.obsidian
+						p.title Obsidian Cat
+						p.hint "Multiplier-based damage"
+						p.explanation Explanation goes here
 				.thumbnail.cat.glass
 
 			.weapon-type-container
@@ -145,6 +250,11 @@ block content
 			h2 Torch
 
 			.thumbnail.base_torch
+				span
+					.callout.thumbnail.base_torch
+					p.title Obsidian Dagger
+					p.hint "Multiplier-based damage"
+					p.explanation Explanation goes here
 			.thumbnail.bright_torch
 			.thumbnail.obsidian_torch
 			.thumbnail.lum_torch

@@ -24,30 +24,30 @@ $(document).ready(function() {
 
 			//if items page, start a timer to flip through the obsidian states every second
 			setInterval(function() {
-				obs_rotation($('.callout.obsidian_shovel'));
-				obs_rotation($('.callout.obsidian_torch'));
-				obs_rotation($('.callout.obsidian_armor'));
-				obs_rotation($('.callout.dagger.obsidian'));
-				obs_rotation($('.callout.longsword.obsidian'));
-				obs_rotation($('.callout.spear.obsidian'));
-				obs_rotation($('.callout.broadsword.obsidian'));
-				obs_rotation($('.callout.cat.obsidian'));
-				obs_rotation($('.callout.flail.obsidian'));
-				obs_rotation($('.callout.whip.obsidian'));
-				obs_rotation($('.callout.bow.obsidian'));
-				obs_rotation($('.callout.rapier.obsidian'));
+				// obs_rotation($('.callout.thumbnail.obsidian_shovel'));
+				// obs_rotation($('.callout.thumbnail.obsidian_torch'));
+				// obs_rotation($('.callout.thumbnail.obsidian_armor'));
+				obs_rotation($('.callout.thumbnail.dagger.obsidian'));
+				// obs_rotation($('.callout.thumbnail.longsword.obsidian'));
+				// obs_rotation($('.callout.thumbnail.spear.obsidian'));
+				// obs_rotation($('.callout.thumbnail.broadsword.obsidian'));
+				// obs_rotation($('.callout.thumbnail.cat.obsidian'));
+				// obs_rotation($('.callout.thumbnail.flail.obsidian'));
+				// obs_rotation($('.callout.thumbnail.whip.obsidian'));
+				// obs_rotation($('.callout.thumbnail.bow.obsidian'));
+				// obs_rotation($('.callout.thumbnail.rapier.obsidian'));
 
-				xbow_rotation($('.callout.xbow.base'));
-				xbow_rotation($('.callout.xbow.blood'));
-				xbow_rotation($('.callout.xbow.gold'));
-				xbow_rotation($('.callout.xbow.tit'));
-				xbow_rotation($('.callout.xbow.glass'));
-				xbow_rotation($('.callout.lute'));
+				// xbow_rotation($('.callout.thumbnail.xbow.base'));
+				// xbow_rotation($('.callout.thumbnail.xbow.blood'));
+				// xbow_rotation($('.callout.thumbnail.xbow.gold'));
+				// xbow_rotation($('.callout.thumbnail.xbow.tit'));
+				// xbow_rotation($('.callout.thumbnail.xbow.glass'));
+				// xbow_rotation($('.callout.thumbnail.lute'));
 
-				obsxbow_rotation($('.callout.xbow.obsidian'));
+				// obsxbow_rotation($('.callout.thumbnail.xbow.obsidian'));
 
-				guns_rotation($('.callout.blunderbuss'));
-				guns_rotation($('.callout.rifle'));
+				// guns_rotation($('.callout.thumbnail.blunderbuss'));
+				// guns_rotation($('.callout.thumbnail.rifle'));
 			},1000);
 		}
 	}

@@ -15,10 +15,14 @@
 			border-top: 1px solid #ECE6FF;
 			margin-top:20px;
 
+			//inline block hack
+			font-size:0px;
+
 			h2 {
 				position:absolute;
 				left:0;
 				top:5px;
+				font-size:22px;
 			}
 
 			//general thumbnail css styles
@@ -29,6 +33,66 @@
 				cursor:pointer;
 
 				margin-top:35px;
+
+				span {
+					display:none;
+					position:fixed;
+					width:350px;
+					left:0;
+					top:50px;
+
+					text-align:center;
+
+					.callout {
+						margin:10px 0 10px 0 !important;
+					}
+
+					.title {
+						font-size:32px;
+						text-decoration:underline;
+						text-transform:uppercase;
+						margin:0 0 20px 0;
+					}
+
+					.hint {
+						font-size:18px;
+						text-transform:uppercase;
+						color:#C1D1F9;
+						width:90%;
+
+						margin:0 5% 20px 5%;
+					}
+
+					.explanation {
+						text-align:left;
+						font-size:14px;
+						list-style:disc;
+						width:89%;
+
+						margin-left:28px;
+						line-height:22px;
+
+						li {
+							margin-bottom:10px;
+
+							ul  {
+								margin-top:5px;
+								font-size:12px;
+
+
+								li {
+									margin-bottom:0px;
+								}
+							}
+						}
+					}
+				}
+
+				&:hover {
+					span {
+						display:block;
+					}
+				}
 			}
 
 			//attack container
@@ -42,6 +106,8 @@
 							margin-top:0px;
 						}
 					}
+
+					font-size:0px;
 				}
 
 				.thumbnail {
