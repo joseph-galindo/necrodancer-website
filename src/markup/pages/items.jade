@@ -482,8 +482,9 @@ block content
 						ul.explanation
 							li Does one damage on contact with an enemy that is immediately adjacent to the character, and can also do one damage to an adjacent enemy while moving
 								ul.explanation
-									li Can attack an enemy as you move. It will first try to attack an enemy that is adjacent to the tile you move to (first one it finds in the left column top-to-bottom, then middle column top-to-bottom, then right column top-to-bottom, respective to your destination tile); if no enemy is found, it attacks the first one that is adjacent to the tile you started at, following the same rules
-						table
+									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
+						table(align="center")
 							tr
 								td
 								td
@@ -522,7 +523,8 @@ block content
 						ul.explanation
 							li Does one damage on contact with an enemy that is immediately adjacent to the character, and can also do one damage to an adjacent enemy while moving
 								ul.explanation
-									li Can attack an enemy as you move. It will first try to attack an enemy that is adjacent to the tile you move to (first one it finds in the left column top-to-bottom, then middle column top-to-bottom, then right column top-to-bottom, respective to your destination tile); if no enemy is found, it attacks the first one that is adjacent to the tile you started at, following the same rules
+									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
 							li While the character is at 1/2 a heart, the cat will glow and deal infinite damage
 							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
 				.thumbnail.cat.gold
@@ -533,7 +535,8 @@ block content
 						ul.explanation
 							li Does one damage on contact with an enemy that is immediately adjacent to the character, and can also do one damage to an adjacent enemy while moving
 								ul.explanation
-									li Can attack an enemy as you move. It will first try to attack an enemy that is adjacent to the tile you move to (first one it finds in the left column top-to-bottom, then middle column top-to-bottom, then right column top-to-bottom, respective to your destination tile); if no enemy is found, it attacks the first one that is adjacent to the tile you started at, following the same rules
+									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
 							li When the character picks up gold, the cat will glow. If they attack on the next beat, the cat will deal infinite damage
 							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
 								ul.explanation
@@ -546,7 +549,8 @@ block content
 						ul.explanation
 							li Does two damage on contact with an enemy that is immediately adjacent to the character, and can also do two damage to an adjacent enemy while moving
 								ul.explanation
-									li Can attack an enemy as you move. It will first try to attack an enemy that is adjacent to the tile you move to (first one it finds in the left column top-to-bottom, then middle column top-to-bottom, then right column top-to-bottom, respective to your destination tile); if no enemy is found, it attacks the first one that is adjacent to the tile you started at, following the same rules
+									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
 				.thumbnail.cat.obsidian
 					span
 						.callout.thumbnail.cat.obsidian
@@ -555,7 +559,8 @@ block content
 						ul.explanation
 							li Does 1-3 damage on contact with an enemy that is immediately adjacent to the character, and can also do 1-3 damage to an adjacent enemy while moving
 								ul.explanation
-									li Can attack an enemy as you move. It will first try to attack an enemy that is adjacent to the tile you move to (first one it finds in the left column top-to-bottom, then middle column top-to-bottom, then right column top-to-bottom, respective to your destination tile); if no enemy is found, it attacks the first one that is adjacent to the tile you started at, following the same rules
+									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
 									li If the coin multiplier is at 1x (0 kills chained), the cat does 1 damage
 									li If the coin multiplier is at 2x (2-4 kills chained), the cat does 2 damage
 									li If the coin multiplier is at 3x (5+ kills chained), the cat does 3 damage
@@ -567,7 +572,8 @@ block content
 						ul.explanation
 							li Does four damage on contact with an enemy that is immediately adjacent to the character, and can also do four damage to an adjacent enemy while moving
 								ul.explanation
-									li Can attack an enemy as you move. It will first try to attack an enemy that is adjacent to the tile you move to (first one it finds in the left column top-to-bottom, then middle column top-to-bottom, then right column top-to-bottom, respective to your destination tile); if no enemy is found, it attacks the first one that is adjacent to the tile you started at, following the same rules
+									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
 							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
 
 
@@ -986,7 +992,7 @@ block content
 				.thumbnail.xbow.glass.threeloaded
 					span
 						.callout.thumbnail.xbow.glass
-						p.title Glass xbow
+						p.title Glass Crossbow
 						p.hint "4 Damage, Breakable"
 						ul.explanation
 							li Does four damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
