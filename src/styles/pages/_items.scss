@@ -38,6 +38,7 @@
 					display:none;
 					position:fixed;
 					width:350px;
+					height:100%;
 					left:0;
 					top:50px;
 
@@ -83,6 +84,37 @@
 								li {
 									margin-bottom:0px;
 								}
+							}
+						}
+					}
+
+					table {
+						position:absolute;
+						left:50%;
+						transform:translateX(-50%);
+						// margin-top:20px;
+
+						font-size:30px;
+
+						border:2px solid #ECE6FF;
+
+						td {
+							border:2px solid #ECE6FF;
+
+							width:50px;
+
+							$table-height:50px;
+							height:$table-height;
+							line-height:$table-height;
+
+							text-align:center;
+
+							// &:first-child {
+							// 	border:none;
+							// }
+
+							&.color {
+								background-color:#8E2626;
 							}
 						}
 					}
@@ -588,7 +620,7 @@
 
 						background-size:216px 108px;
 
-						background-position:-162px 0;
+						background-position:0 0;
 
 						&.oneloaded {
 							background-position:-108px 0;

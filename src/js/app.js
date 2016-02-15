@@ -14,6 +14,10 @@ $(document).ready(function() {
 	        if((anchor[i].href).split('/')[3] == current) {
 	            anchor[i].className = "active";
 	        }
+
+	        if(current == '') {
+	        	anchor[0].className = "active";
+	        }
 	    }
 	}
 
@@ -28,13 +32,13 @@ $(document).ready(function() {
 				// obs_rotation($('.callout.thumbnail.obsidian_torch'));
 				// obs_rotation($('.callout.thumbnail.obsidian_armor'));
 				obs_rotation($('.callout.thumbnail.dagger.obsidian'));
-				// obs_rotation($('.callout.thumbnail.longsword.obsidian'));
-				// obs_rotation($('.callout.thumbnail.spear.obsidian'));
-				// obs_rotation($('.callout.thumbnail.broadsword.obsidian'));
-				// obs_rotation($('.callout.thumbnail.cat.obsidian'));
-				// obs_rotation($('.callout.thumbnail.flail.obsidian'));
-				// obs_rotation($('.callout.thumbnail.whip.obsidian'));
-				// obs_rotation($('.callout.thumbnail.bow.obsidian'));
+				obs_rotation($('.callout.thumbnail.longsword.obsidian'));
+				obs_rotation($('.callout.thumbnail.spear.obsidian'));
+				obs_rotation($('.callout.thumbnail.broadsword.obsidian'));
+				obs_rotation($('.callout.thumbnail.cat.obsidian'));
+				obs_rotation($('.callout.thumbnail.flail.obsidian'));
+				obs_rotation($('.callout.thumbnail.whip.obsidian'));
+				obs_rotation($('.callout.thumbnail.bow.obsidian'));
 				// obs_rotation($('.callout.thumbnail.rapier.obsidian'));
 
 				// xbow_rotation($('.callout.thumbnail.xbow.base'));
