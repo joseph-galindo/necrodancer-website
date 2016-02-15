@@ -39,19 +39,20 @@ $(document).ready(function() {
 				obs_rotation($('.callout.thumbnail.flail.obsidian'));
 				obs_rotation($('.callout.thumbnail.whip.obsidian'));
 				obs_rotation($('.callout.thumbnail.bow.obsidian'));
-				// obs_rotation($('.callout.thumbnail.rapier.obsidian'));
 
-				// xbow_rotation($('.callout.thumbnail.xbow.base'));
-				// xbow_rotation($('.callout.thumbnail.xbow.blood'));
-				// xbow_rotation($('.callout.thumbnail.xbow.gold'));
-				// xbow_rotation($('.callout.thumbnail.xbow.tit'));
-				// xbow_rotation($('.callout.thumbnail.xbow.glass'));
-				// xbow_rotation($('.callout.thumbnail.lute'));
+				xbow_rotation($('.callout.thumbnail.xbow.base'));
+				xbow_rotation($('.callout.thumbnail.xbow.blood'));
+				xbow_rotation($('.callout.thumbnail.xbow.gold'));
+				xbow_rotation($('.callout.thumbnail.xbow.tit'));
+				obsxbow_rotation($('.callout.thumbnail.xbow.obsidian'));
+				xbow_rotation($('.callout.thumbnail.xbow.glass'));
 
-				// obsxbow_rotation($('.callout.thumbnail.xbow.obsidian'));
+				obs_rotation($('.callout.thumbnail.rapier.obsidian'));
 
-				// guns_rotation($('.callout.thumbnail.blunderbuss'));
-				// guns_rotation($('.callout.thumbnail.rifle'));
+				guns_rotation($('.callout.thumbnail.blunderbuss'));
+				guns_rotation($('.callout.thumbnail.rifle'));
+
+				xbow_rotation($('.callout.thumbnail.lute'));
 			},1000);
 		}
 	}
