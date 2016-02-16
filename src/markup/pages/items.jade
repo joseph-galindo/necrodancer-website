@@ -585,7 +585,7 @@ block content
 						p.title flail
 						p.hint "Knockback Attack"
 						ul.explanation
-							li Does one damage on contact with all three enemies that directly neighbor the character
+							li Does one damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
 							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
 								ul.explanation
 									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
@@ -598,7 +598,7 @@ block content
 								td
 								td
 							tr
-								td
+								td.color
 								td.color
 								td
 								td
@@ -610,7 +610,7 @@ block content
 								td
 								td
 							tr
-								td
+								td.color
 								td.color
 								td
 								td
@@ -627,7 +627,7 @@ block content
 						p.title Blood flail
 						p.hint "Kill to heal, low health = +damage"
 						ul.explanation
-							li Does one damage on contact with all three enemies that directly neighbor the character
+							li Does one damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
 							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
 								ul.explanation
 									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
@@ -640,7 +640,7 @@ block content
 						p.title Golden flail
 						p.hint "High dmg after gold pickup"
 						ul.explanation
-							li Does one damage on contact with all three enemies that directly neighbor the character
+							li Does one damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
 							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
 								ul.explanation
 									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
@@ -655,7 +655,7 @@ block content
 						p.title Titanium flail
 						p.hint "2 Damage"
 						ul.explanation
-							li Does two damage on contact with all three enemies that directly neighbor the character
+							li Does two damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
 							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
 								ul.explanation
 									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
@@ -666,21 +666,22 @@ block content
 						p.title Obsidian flail
 						p.hint "Multiplier-based Damage"
 						ul.explanation
-							li Does 1-3 damage on contact with all three enemies that directly neighbor the character
+							li Does 1-3 damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
+								ul.explanation
+									li If the coin multiplier is at 1x (0 kills chained), the flail does 1 damage
+									li If the coin multiplier is at 2x (2-4 kills chained), the flail does 2 damage
+									li If the coin multiplier is at 3x (5+ kills chained), the flail does 3 damage
 							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
 								ul.explanation
 									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
 									li Pinning enemies to walls (used heavily with almost all mini-bosses)
-									li If the coin multiplier is at 1x (0 kills chained), the flail does 1 damage
-									li If the coin multiplier is at 2x (2-4 kills chained), the flail does 2 damage
-									li If the coin multiplier is at 3x (5+ kills chained), the flail does 3 damage
 				.thumbnail.flail.glass
 					span
 						.callout.thumbnail.flail.glass
 						p.title Glass flail
 						p.hint "4 Damage, Breakable"
 						ul.explanation
-							li Does four damage on contact with all three enemies that directly neighbor the character
+							li Does four damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
 							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
 								ul.explanation
 									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
@@ -1140,6 +1141,7 @@ block content
 									li Skeleton Riders
 									li Blademasters
 									li Gargoyles
+							li Kills Melody on pickup
 						table
 							tr
 								td
@@ -1267,7 +1269,150 @@ block content
 			h2 Head
 
 			.thumbnail.blast_helm
+				span
+					.callout.thumbnail.blast_helm
+					p.title Blast Helm
+					p.hint "Bomb Immunity, +3 Bombs"
+					ul.explanation
+						li On the first time it is picked up, adds 3 bombs to the character's inventory
+						li Gives damage immunity from all explosions, which include
+							ul.explanation
+								li Character bombs
+								li Bomb trap bombs
+								li Goblin Bomber bombs/explosions
+								li Pixie explosions
+						li Immediately detonates bombs laid by the character, but does not immediately detonate enemy/environmental bombs
+						li Removed from Eli's pool
 			.thumbnail.circlet
+				span
+					.callout.thumbnail.circlet
+					p.title Circlet of Telepathy
+					p.hint "See all enemies"
+					ul.explanation
+						li Shows all enemies and NPCs on the overworld view and on the minimap, without the need for a torch, map, etc.
+						li Spirits (wights, ghasts, etc.) are immediately forced to spawn (not aggro) when picking up this item, or entering a level with this item
+			.thumbnail.greed
+				span
+					.callout.thumbnail.greed
+					p.title Crown of Greed
+					p.hint "Double coins + leak coins"
+					ul.explanation
+						li Drops when the shopkeeper is killed on all characters
+						li Doubles coin pickups, but only while worn, not when the gold is dropped
+							ul.explanation 
+								li In other words, if a pile of 40 gold is created while wearing this crown, picking it up will give 80 gold
+								li However, creating the pile with the crown on, removing the crown, and then picking up the pile would instead give 40 gold
+						li Leaks one gold from the character's inventory every beat that the game ticks 
+							ul.explanation
+								li Note that this does not mean every beat the player acts; the drain occurs regardless of player action 
+						li Kills Monk and Coda on pickup from "Vow of Poverty"
+			.thumbnail.teleportation
+				span
+					.callout.thumbnail.teleportation
+					p.title Crown of Teleportation
+					p.hint "Teleport on hit"
+					ul.explanation
+						li When worn, if the character is damaged and the protect-item order reaches the head slot, the following happens:
+							ul.explanation
+								li No damage is taken for that hit
+								li The crown breaks
+								li The character is teleported to the floor's normal shop (this can include locked normal shops)
+						li If the above conditions happen during a boss fight, the character is randomly teleported within the boss room
+			.thumbnail.thorns
+				span
+					.callout.thumbnail.thorns
+					p.title Crown of Thorns
+					p.hint "10 kills = heal"
+					ul.explanation
+						li Each time this item is picked up, the player takes 0.5 hearts of damage
+						li After killing 10 enemies while wearing this item, the character will be healed for 0.5 health
+						li If wearing this and using a blood-tier weapon, the character will be healed for 0.5 health after 5 kills instead of 10
+						li Removed from Aria's and Coda's pools
+			.thumbnail.jaw
+				span
+					.callout.thumbnail.jaw
+					p.title Glass Jaw
+					p.hint "Double all dmg, frailty"
+					ul.explanation
+						li While worn, all damage on the character's build is doubled
+						li While the Karate Gi doubles weapon damage, this item doubles the damage of the entire build
+							ul.explanation
+								li For example, if Cadence has Titanium Longsword + Ring of Might, their normal damage would be 3
+								li If you add only Karate Gi, their damage is 5 (4 longsword + 1 might)
+								li If you add only Glass Jaw, their damage is 6 (4 longsword + 2 might)
+								li If you add both Karate Gi and Glass Jaw, their damage is 10 (4*2=8 longsword + 2 might)
+						li Kills the character immediately when taking any damage
+							ul.explanation
+								li If a potion is equipped when taking damage, the potion will be used and the Glass Jaw will break
+			.thumbnail.helm
+				span
+					.callout.thumbnail.helm
+					p.title Helm
+					p.hint "+0.5 defense"
+					ul.explanation
+						li While worn, adds 0.5 hearts of defense to the character's armor stack
+						li No really, that's all it does
+			.thumbnail.miners
+				span
+					.callout.thumbnail.miners
+					p.title Miner's Cap
+					p.hint "Move + Dig"
+					ul.explanation
+						li While worn, adds +1 to dig strength and +1 to torch radius
+						li Digs as you move in a pattern similar to how Golden Lute attacking works, except it only applies to tiles adjacent to the destination tile, and does not affect tiles adjacent to the origin tile
+						li The diagram below refers to C1 as the starting tile, and C2 as the destination tile when moving
+					table
+						tr
+							td
+							td
+							td
+							td
+							td
+						tr
+							td
+							td
+							td.color
+							td
+							td
+						tr
+							td
+							td C1
+							td C2
+							td.color
+							td
+						tr
+							td 
+							td
+							td.color
+							td
+							td
+						tr
+							td 
+							td
+							td
+							td
+							td
+			.thumbnail.monocle
+				span
+					.callout.thumbnail.monocle
+					p.title Monocle
+					p.hint "See all items"
+					ul.explanation
+						li Shows all viewable items (bombs, exposed shop items) on the current floor on the overworld view
+						li Shows all unknown items (unopened chests, unopened crates/barrels/gargoyles) on the current floor on the overworld view
+						li Shows items that shrines will drop when bombed, depending on the current state of the shrine
+						li Shows all secret shop walls and tiles (conjurer, arena, shriner, blood, transmogrifier, glass, food, pawnbroker) on the current floor
+						li Spirits (wights, ghasts, etc.) are immediately forced to spawn (not aggro) when picking up this item, or entering a level with this item
+
+			.thumbnail.sunglasses
+				span
+					.callout.thumbnail.sunglasses
+					p.title Sunglasses
+					p.hint "+1 Damage, Strange Vision"
+					ul.explanation
+						li While worn, adds +1 side damage
+						li While worn, silhouettes all enemies, NPCs, and barrels/crates/gargoyles
+						li Overrides and disables the "Always Show Enemy Hearts" option while worn
 
 		.container.shovel
 
