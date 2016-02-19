@@ -7,6 +7,8 @@ $(document).ready(function() {
 	    var anchor = nav.find('a');
 	    var current = window.location.pathname.split('/')[1];
 
+	    current = current.replace('.html','');
+
 	    for (var i = 0; i < anchor.length; i++) {
 
 	    	//this split is messy...doublecheck this works as intended in prod environment
