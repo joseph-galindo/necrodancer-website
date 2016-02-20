@@ -6,7 +6,7 @@ $(document).ready(function() {
 	    var nav = $('.main-nav')
 	    var anchor = nav.find('a');
 	    var current = window.location.pathname.split('/')[1];
-	    current = current.replace('.html','');
+	    // current = current.replace('.html','');
 
 	    for (var i = 0; i < anchor.length; i++) {
 
