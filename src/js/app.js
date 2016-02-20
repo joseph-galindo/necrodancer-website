@@ -6,6 +6,7 @@ $(document).ready(function() {
 	    var nav = $('.main-nav')
 	    var anchor = nav.find('a');
 	    var current = window.location.pathname.split('/')[1];
+	    current = current.replace('.html','');
 
 	    for (var i = 0; i < anchor.length; i++) {
 
@@ -24,7 +25,7 @@ $(document).ready(function() {
 	function init_rotations() {
 		var current = window.location.pathname.split('/')[1];
 
-		if(current === 'items.html') {
+		if(current === 'items.html' || current === 'items.htm' || current === 'items') {
 
 			//if items page, start a timer to flip through the obsidian states every second
 			setInterval(function() {
