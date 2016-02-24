@@ -17,1220 +17,1352 @@ block content
 
 			h2 Attack
 
-			.weapon-type-container
+			.offset-wrapper
 
-				.thumbnail.dagger.base
-					span
-						.callout.thumbnail.dagger.base
-						p.title Dagger
-						p.hint "Dagger, throwable"
-						ul.explanation
-							li Does one damage on contact with an enemy that is immediately adjacent to the character
-							li Can be thrown, but will stop at the first wall encountered
-							li The starting weapon for all characters except Eli, Dove, and Bolt
+				.weapon-type-container
 
-						table
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td 
-								td
-								td
-								td
-								td
+					.thumbnail.dagger.base
+						span
+							.callout.thumbnail.dagger.base
+							p.title Dagger
+							p.hint "Dagger, throwable"
+							ul.explanation
+								li Does one damage on contact with an enemy that is immediately adjacent to the character
+								li Can be thrown, but will stop at the first wall encountered
+								li The starting weapon for all characters except Eli, Dove, and Bolt
 
-				.thumbnail.dagger.blood
-					span
-						.callout.thumbnail.dagger.blood
-						p.title Blood Dagger
-						p.hint "Kill to heal, low health = +damage"
-						ul.explanation
-							li Does one damage to all enemies if health is at one heart or more
-							li While the character is at 1/2 a heart, the dagger will glow and deal infinite damage
-							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
-							li Can be thrown, but will stop at the first wall encountered 
-				.thumbnail.dagger.gold
-					span
-						.callout.thumbnail.dagger.gold
-						p.title Golden Dagger
-						p.hint "High dmg after gold pickup"
-						ul.explanation
-							li Does one damage to all enemies if the character has not just picked up gold
-							li When the character picks up gold, the dagger will glow. If they attack on the next beat, the dagger will deal infinite damage
-							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
-								ul.explanation
-									li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold dagger they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
-							li Can be thrown, but will stop at the first wall encountered 
-				.thumbnail.dagger.tit
-					span
-						.callout.thumbnail.dagger.tit
-						p.title Titanium Dagger
-						p.hint "2 Damage"
-						ul.explanation
-							li Does two damage on contact with an enemy that is immediately adjacent to the character
-							li Can be thrown, but will stop at the first wall encountered
-				.thumbnail.dagger.obsidian
-					span
-						.callout.thumbnail.dagger.obsidian
-						p.title Obsidian Dagger
-						p.hint "Multiplier-based damage"
-						ul.explanation
-							li Does 1-3 damage on contact with an enemy that is immediately adjacent to the character
-								ul.explanation
-									li If the coin multiplier is at 1x (0 kills chained), the dagger does 1 damage
-									li If the coin multiplier is at 2x (2-4 kills chained), the dagger does 2 damage
-									li If the coin multiplier is at 3x (5+ kills chained), the dagger does 3 damage
-							li Thrown obsidian weapons will deal damage based on multiplier at the time of enemy contact, not multiplier at the time the weapon was thrown
-							li Can be thrown, but will stop at the first wall encountered
-				.thumbnail.dagger.glass
-					span
-						.callout.thumbnail.dagger.glass
-						p.title Glass Dagger
-						p.hint "4 Damage, Breakable"
-						ul.explanation
-							li Does four damage on contact with an enemy that is immediately adjacent to the character
-							li Can be thrown, but will stop at the first wall encountered
-								ul.explanation
-									li "Stopping" for this dagger will actually break it, turning it into the Glass Shard
-							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
-				.thumbnail.dagger.glass_shard
-					span
-						.callout.thumbnail.dagger.glass_shard
-						p.title Glass Shard
-						p.hint "Glass Shard"
-						ul.explanation
-							li Functionally, simply a reskin of the base Dagger
-							li Does one damage on contact with an enemy that is immediately adjacent to the character
-							li Can be thrown, but will stop at the first wall encountered
-							li Will be dropped at the character's feet when damaged while holding any glass weapon
-				.thumbnail.dagger.jeweled
-					span
-						.callout.thumbnail.dagger.jeweled
-						p.title Jeweled Dagger
-						p.hint "5 Damage"
-						ul.explanation
-							li Does five damage on contact with an enemy that is immediately adjacent to the character
-							li Can be thrown, but will stop at the first wall encountered
-							li Originally acted like the base Dagger, except it would have one chance to give 3x the gold an enemy would normally drop (if it dealt the killing blow), and would then transform into the base Dagger
-				.thumbnail.dagger.phasing
-					span
-						.callout.thumbnail.dagger.phasing
-						p.title Dagger of Phasing
-						p.hint "Phasing attack, 2 dmg"
-						ul.explanation
-							li Does two phasing damage on contact with an enemy that is immediately adjacent to the character
-							li Can be thrown; unlike other daggers, it will never stop until it hits the level boundary: throwing into shop walls is dangerous!
-							li Does phasing damage; this means it can be used within a wall (with the ring of phasing), and does phasing damage (listed below)
-								ul.explanation
-									li Underground moles
-									li Damages Coral Riff in its initial phase 
-									li Damages King Conga in his throne phase
-									li Damages Dead Ringer directly in both phases
-							li Does piercing damage; this means it damages several enemies that normally cannot be damaged directly
-								ul.explanation
-									li Armadillos that are rolling
-									li Skeleton Knights
-									li Skeleton Riders
-									li Blademasters
-									li Gargoyles
-				.thumbnail.dagger.frost
-					span
-						.callout.thumbnail.dagger.frost
-						p.title Dagger of Frost
-						p.hint "Freeze Enemies, Kill Frozen Enemies, Piercing"
-						ul.explanation
-							li When contacting an enemy that is immediately adjacent to the character for the first time, it deals one piercing damage and freezes the enemy for 3 beats
-							li When contacting an enemy that is immediately adjacent to the character that has been frozen by any means, it will deal infinite damage
-								ul.explanation
-									li Frozen Dead Ringer is the exception to this rule, it will do no damage
-							li Can be thrown, but will stop at the first wall encountered
-							li Does piercing damage; this means it damages several enemies that normally cannot be damaged directly
-								ul.explanation
-									li Armadillos that are rolling
-									li Skeleton Knights
-									li Skeleton Riders
-									li Blademasters
-									li Gargoyles
+							table
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
 
-			.weapon-type-container
+					.thumbnail.dagger.blood
+						span
+							.callout.thumbnail.dagger.blood
+							p.title Blood Dagger
+							p.hint "Kill to heal, low health = +damage"
+							ul.explanation
+								li Does one damage to all enemies if health is at one heart or more
+								li While the character is at 1/2 a heart, the dagger will glow and deal infinite damage
+								li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+								li Can be thrown, but will stop at the first wall encountered 
+					.thumbnail.dagger.gold
+						span
+							.callout.thumbnail.dagger.gold
+							p.title Golden Dagger
+							p.hint "High dmg after gold pickup"
+							ul.explanation
+								li Does one damage to all enemies if the character has not just picked up gold
+								li When the character picks up gold, the dagger will glow. If they attack on the next beat, the dagger will deal infinite damage
+								li Adds +1 to the gold count on enemy drops (pre-multiplier). 
+									ul.explanation
+										li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold dagger they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
+								li Can be thrown, but will stop at the first wall encountered 
+					.thumbnail.dagger.tit
+						span
+							.callout.thumbnail.dagger.tit
+							p.title Titanium Dagger
+							p.hint "2 Damage"
+							ul.explanation
+								li Does two damage on contact with an enemy that is immediately adjacent to the character
+								li Can be thrown, but will stop at the first wall encountered
+					.thumbnail.dagger.obsidian
+						span
+							.callout.thumbnail.dagger.obsidian
+							p.title Obsidian Dagger
+							p.hint "Multiplier-based damage"
+							ul.explanation
+								li Does 1-3 damage on contact with an enemy that is immediately adjacent to the character
+									ul.explanation
+										li If the coin multiplier is at 1x (0 kills chained), the dagger does 1 damage
+										li If the coin multiplier is at 2x (2-4 kills chained), the dagger does 2 damage
+										li If the coin multiplier is at 3x (5+ kills chained), the dagger does 3 damage
+								li Thrown obsidian weapons will deal damage based on multiplier at the time of enemy contact, not multiplier at the time the weapon was thrown
+								li Can be thrown, but will stop at the first wall encountered
+					.thumbnail.dagger.glass
+						span
+							.callout.thumbnail.dagger.glass
+							p.title Glass Dagger
+							p.hint "4 Damage, Breakable"
+							ul.explanation
+								li Does four damage on contact with an enemy that is immediately adjacent to the character
+								li Can be thrown, but will stop at the first wall encountered
+									ul.explanation
+										li "Stopping" for this dagger will actually break it, turning it into the Glass Shard
+								li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
+					.thumbnail.dagger.glass_shard
+						span
+							.callout.thumbnail.dagger.glass_shard
+							p.title Glass Shard
+							p.hint "Glass Shard"
+							ul.explanation
+								li Functionally, simply a reskin of the base Dagger
+								li Does one damage on contact with an enemy that is immediately adjacent to the character
+								li Can be thrown, but will stop at the first wall encountered
+								li Will be dropped at the character's feet when damaged while holding any glass weapon
+					.thumbnail.dagger.jeweled
+						span
+							.callout.thumbnail.dagger.jeweled
+							p.title Jeweled Dagger
+							p.hint "5 Damage"
+							ul.explanation
+								li Does five damage on contact with an enemy that is immediately adjacent to the character
+								li Can be thrown, but will stop at the first wall encountered
+								li Originally acted like the base Dagger, except it would have one chance to give 3x the gold an enemy would normally drop (if it dealt the killing blow), and would then transform into the base Dagger
+					.thumbnail.dagger.phasing
+						span
+							.callout.thumbnail.dagger.phasing
+							p.title Dagger of Phasing
+							p.hint "Phasing attack, 2 dmg"
+							ul.explanation
+								li Does two phasing damage on contact with an enemy that is immediately adjacent to the character
+								li Can be thrown; unlike other daggers, it will never stop until it hits the level boundary: throwing into shop walls is dangerous!
+								li Does phasing damage; this means it can be used within a wall (with the ring of phasing), and does phasing damage (listed below)
+									ul.explanation
+										li Underground moles
+										li Damages Coral Riff in its initial phase 
+										li Damages King Conga in his throne phase
+										li Damages Dead Ringer directly in both phases
+								li Does piercing damage; this means it damages several enemies that normally cannot be damaged directly
+									ul.explanation
+										li Armadillos that are rolling
+										li Skeleton Knights
+										li Skeleton Riders
+										li Blademasters
+										li Gargoyles
+					.thumbnail.dagger.frost
+						span
+							.callout.thumbnail.dagger.frost
+							p.title Dagger of Frost
+							p.hint "Freeze Enemies, Kill Frozen Enemies, Piercing"
+							ul.explanation
+								li When contacting an enemy that is immediately adjacent to the character for the first time, it deals one piercing damage and freezes the enemy for 3 beats
+								li When contacting an enemy that is immediately adjacent to the character that has been frozen by any means, it will deal infinite damage
+									ul.explanation
+										li Frozen Dead Ringer is the exception to this rule, it will do no damage
+								li Can be thrown, but will stop at the first wall encountered
+								li Does piercing damage; this means it damages several enemies that normally cannot be damaged directly
+									ul.explanation
+										li Armadillos that are rolling
+										li Skeleton Knights
+										li Skeleton Riders
+										li Blademasters
+										li Gargoyles
 
-				.thumbnail.longsword.base
-					span
-						.callout.thumbnail.longsword.base
-						p.title Longsword
-						p.hint "Long Attack"
-						ul.explanation
-							li Does one damage to all enemies found within its range
-							li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy behind that enemy, or both of them at the same time if possible
+				.weapon-type-container
 
-						table
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td.color
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td 
-								td
-								td
-								td
-								td
+					.thumbnail.longsword.base
+						span
+							.callout.thumbnail.longsword.base
+							p.title Longsword
+							p.hint "Long Attack"
+							ul.explanation
+								li Does one damage to all enemies found within its range
+								li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy behind that enemy, or both of them at the same time if possible
 
-				.thumbnail.longsword.blood
-					span
-						.callout.thumbnail.longsword.blood
-						p.title Blood Longsword
-						p.hint "Kill to heal, low health = +damage"
-						ul.explanation
-							li Does one damage to all enemies found within its range
-							li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy directly behind that enemy, or both of them at the same time if possible
-							li While the character is at 1/2 a heart, the longsword will glow and deal infinite damage
-							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
-				.thumbnail.longsword.gold
-					span
-						.callout.thumbnail.longsword.gold
-						p.title Golden Longsword
-						p.hint "High dmg after gold pickup"
-						ul.explanation
-							li Does one damage to all enemies found within its range
-							li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy directly behind that enemy, or both of them at the same time if possible
-							li When the character picks up gold, the longsword will glow. If they attack on the next beat, the longsword will deal infinite damage
-							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
-								ul.explanation
-									li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold longsword they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
-				.thumbnail.longsword.tit
-					span
-						.callout.thumbnail.longsword.tit
-						p.title Titanium Longsword
-						p.hint "2 Damage"
-						ul.explanation
-							li Does two damage to all enemies found within its range
-							li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy behind that enemy, or both of them at the same time if possible
-				.thumbnail.longsword.obsidian
-					span
-						.callout.thumbnail.longsword.obsidian
-						p.title Obsidian Longsword
-						p.hint "Multiplier-based Damage"
-						ul.explanation
-							li Does 1-3 damage to all enemies found within its range
-								ul.explanation
-									li If the coin multiplier is at 1x (0 kills chained), the longsword does 1 damage
-									li If the coin multiplier is at 2x (2-4 kills chained), the longsword does 2 damage
-									li If the coin multiplier is at 3x (5+ kills chained), the longsword does 3 damage
-							li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy behind that enemy, or both of them at the same time if possible
-				.thumbnail.longsword.glass
-					span
-						.callout.thumbnail.longsword.glass
-						p.title Glass Longsword
-						p.hint "4 Damage, Breakable"
-						ul.explanation
-							li Does four damage to all enemies found within its range
-							li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy behind that enemy, or both of them at the same time if possible
-							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
+							table
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td.color
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
 
-			.weapon-type-container
+					.thumbnail.longsword.blood
+						span
+							.callout.thumbnail.longsword.blood
+							p.title Blood Longsword
+							p.hint "Kill to heal, low health = +damage"
+							ul.explanation
+								li Does one damage to all enemies found within its range
+								li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy directly behind that enemy, or both of them at the same time if possible
+								li While the character is at 1/2 a heart, the longsword will glow and deal infinite damage
+								li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+					.thumbnail.longsword.gold
+						span
+							.callout.thumbnail.longsword.gold
+							p.title Golden Longsword
+							p.hint "High dmg after gold pickup"
+							ul.explanation
+								li Does one damage to all enemies found within its range
+								li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy directly behind that enemy, or both of them at the same time if possible
+								li When the character picks up gold, the longsword will glow. If they attack on the next beat, the longsword will deal infinite damage
+								li Adds +1 to the gold count on enemy drops (pre-multiplier). 
+									ul.explanation
+										li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold longsword they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
+					.thumbnail.longsword.tit
+						span
+							.callout.thumbnail.longsword.tit
+							p.title Titanium Longsword
+							p.hint "2 Damage"
+							ul.explanation
+								li Does two damage to all enemies found within its range
+								li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy behind that enemy, or both of them at the same time if possible
+					.thumbnail.longsword.obsidian
+						span
+							.callout.thumbnail.longsword.obsidian
+							p.title Obsidian Longsword
+							p.hint "Multiplier-based Damage"
+							ul.explanation
+								li Does 1-3 damage to all enemies found within its range
+									ul.explanation
+										li If the coin multiplier is at 1x (0 kills chained), the longsword does 1 damage
+										li If the coin multiplier is at 2x (2-4 kills chained), the longsword does 2 damage
+										li If the coin multiplier is at 3x (5+ kills chained), the longsword does 3 damage
+								li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy behind that enemy, or both of them at the same time if possible
+					.thumbnail.longsword.glass
+						span
+							.callout.thumbnail.longsword.glass
+							p.title Glass Longsword
+							p.hint "4 Damage, Breakable"
+							ul.explanation
+								li Does four damage to all enemies found within its range
+								li Longswords have a range of two tiles deep, but one tile wide; they can hit the enemy directly adjacent to the character, the enemy behind that enemy, or both of them at the same time if possible
+								li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
 
-				.thumbnail.spear.base
-					span
-						.callout.thumbnail.spear.base
-						p.title Spear
-						p.hint "Long Attack"
-						ul.explanation
-							li Does one damage to the first enemy found within its range
-							li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
-							li Can be thrown, but will stop at the first wall encountered
-							li The starting weapon for Bolt
+				.weapon-type-container
 
-						table
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td.color
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td 
-								td
-								td
-								td
-								td
+					.thumbnail.spear.base
+						span
+							.callout.thumbnail.spear.base
+							p.title Spear
+							p.hint "Long Attack"
+							ul.explanation
+								li Does one damage to the first enemy found within its range
+								li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
+								li Can be thrown, but will stop at the first wall encountered
+								li The starting weapon for Bolt
 
-				.thumbnail.spear.blood
-					span
-						.callout.thumbnail.spear.blood
-						p.title Blood Spear
-						p.hint "Kill to heal, low health = +damage"
-						ul.explanation
-							li Does one damage to the first enemy found within its range
-							li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
-							li While the character is at 1/2 a heart, the spear will glow and deal infinite damage
-							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
-							li Can be thrown, but will stop at the first wall encountered
-				.thumbnail.spear.gold
-					span
-						.callout.thumbnail.spear.gold
-						p.title Golden Spear
-						p.hint "High dmg after gold pickup"
-						ul.explanation
-							li Does one damage to the first enemy found within its range
-							li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
-							li When the character picks up gold, the spear will glow. If they attack on the next beat, the spear will deal infinite damage
-							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
-								ul.explanation
-									li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold spear they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
-							li Can be thrown, but will stop at the first wall encountered
-				.thumbnail.spear.tit
-					span
-						.callout.thumbnail.spear.tit
-						p.title Titanium Spear
-						p.hint "2 Damage"
-						ul.explanation
-							li Does two damage to the first enemy found within its range
-							li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
-							li Can be thrown, but will stop at the first wall encountered
-				.thumbnail.spear.obsidian
-					span
-						.callout.thumbnail.spear.obsidian
-						p.title Obsidian Spear
-						p.hint "Multiplier-based Damage"
-						ul.explanation
-							li Does 1-3 damage to the first enemy found within its range
-								ul.explanation
-									li If the coin multiplier is at 1x (0 kills chained), the spear does 1 damage
-									li If the coin multiplier is at 2x (2-4 kills chained), the spear does 2 damage
-									li If the coin multiplier is at 3x (5+ kills chained), the spear does 3 damage
-							li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
-							li Can be thrown, but will stop at the first wall encountered
-				.thumbnail.spear.glass
-					span
-						.callout.thumbnail.spear.glass
-						p.title Glass Spear
-						p.hint "4 Damage, Breakable"
-						ul.explanation
-							li Does four damage to the first enemy found within its range
-							li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
-							li Can be thrown, but will stop at the first wall encountered
-								ul.explanation
-									li "Stopping" for this spear will actually break it, turning it into the Glass Shard
-							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
+							table
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td.color
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
 
-			.weapon-type-container
+					.thumbnail.spear.blood
+						span
+							.callout.thumbnail.spear.blood
+							p.title Blood Spear
+							p.hint "Kill to heal, low health = +damage"
+							ul.explanation
+								li Does one damage to the first enemy found within its range
+								li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
+								li While the character is at 1/2 a heart, the spear will glow and deal infinite damage
+								li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+								li Can be thrown, but will stop at the first wall encountered
+					.thumbnail.spear.gold
+						span
+							.callout.thumbnail.spear.gold
+							p.title Golden Spear
+							p.hint "High dmg after gold pickup"
+							ul.explanation
+								li Does one damage to the first enemy found within its range
+								li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
+								li When the character picks up gold, the spear will glow. If they attack on the next beat, the spear will deal infinite damage
+								li Adds +1 to the gold count on enemy drops (pre-multiplier). 
+									ul.explanation
+										li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold spear they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
+								li Can be thrown, but will stop at the first wall encountered
+					.thumbnail.spear.tit
+						span
+							.callout.thumbnail.spear.tit
+							p.title Titanium Spear
+							p.hint "2 Damage"
+							ul.explanation
+								li Does two damage to the first enemy found within its range
+								li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
+								li Can be thrown, but will stop at the first wall encountered
+					.thumbnail.spear.obsidian
+						span
+							.callout.thumbnail.spear.obsidian
+							p.title Obsidian Spear
+							p.hint "Multiplier-based Damage"
+							ul.explanation
+								li Does 1-3 damage to the first enemy found within its range
+									ul.explanation
+										li If the coin multiplier is at 1x (0 kills chained), the spear does 1 damage
+										li If the coin multiplier is at 2x (2-4 kills chained), the spear does 2 damage
+										li If the coin multiplier is at 3x (5+ kills chained), the spear does 3 damage
+								li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
+								li Can be thrown, but will stop at the first wall encountered
+					.thumbnail.spear.glass
+						span
+							.callout.thumbnail.spear.glass
+							p.title Glass Spear
+							p.hint "4 Damage, Breakable"
+							ul.explanation
+								li Does four damage to the first enemy found within its range
+								li Spears have a range of two tiles deep, but one tile wide. They act similarly to longswords, except they cannot hit both enemies within its deep range. It will instead hit the first enemy it can reach within its deep range
+								li Can be thrown, but will stop at the first wall encountered
+									ul.explanation
+										li "Stopping" for this spear will actually break it, turning it into the Glass Shard
+								li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
 
-				.thumbnail.broadsword.base
-					span
-						.callout.thumbnail.broadsword.base
-						p.title Broadsword
-						p.hint "Wide Attack"
-						ul.explanation
-							li Does one damage on contact with all three enemies that directly neighbor the character
-								ul.explanation
-									li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
+				.weapon-type-container
 
-						table
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td
-								td.color
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td
-								td
-								td
-							tr
-								td
-								td.color
-								td
-								td
-								td
-							tr
-								td 
-								td
-								td
-								td
-								td
-				.thumbnail.broadsword.blood
-					span
-						.callout.thumbnail.broadsword.blood
-						p.title Blood Broadsword
-						p.hint "Kill to heal, low health = +damage"
-						ul.explanation
-							li Does one damage on contact with all three enemies that directly neighbor the character
-								ul.explanation
-									li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
-							li While the character is at 1/2 a heart, the broadsword will glow and deal infinite damage
-							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
-				.thumbnail.broadsword.gold
-					span
-						.callout.thumbnail.broadsword.gold
-						p.title Golden broadsword
-						p.hint "High dmg after gold pickup"
-						ul.explanation
-							li Does one damage on contact with all three enemies that directly neighbor the character
-								ul.explanation
-									li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
-							li When the character picks up gold, the broadsword will glow. If they attack on the next beat, the broadsword will deal infinite damage
-							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
-								ul.explanation
-									li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold broadsword they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
-				.thumbnail.broadsword.tit
-					span
-						.callout.thumbnail.broadsword.tit
-						p.title Titanium broadsword
-						p.hint "2 Damage"
-						ul.explanation
-							li Does two damage on contact with all three enemies that directly neighbor the character
-								ul.explanation
-									li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
-				.thumbnail.broadsword.obsidian
-					span
-						.callout.thumbnail.broadsword.obsidian
-						p.title Obsidian broadsword
-						p.hint "Multiplier-based Damage"
-						ul.explanation
-							li Does 1-3 damage on contact with all three enemies that directly neighbor the character
-								ul.explanation
-									li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
-									li If the coin multiplier is at 1x (0 kills chained), the broadsword does 1 damage
-									li If the coin multiplier is at 2x (2-4 kills chained), the broadsword does 2 damage
-									li If the coin multiplier is at 3x (5+ kills chained), the broadsword does 3 damage
-				.thumbnail.broadsword.glass
-					span
-						.callout.thumbnail.broadsword.glass
-						p.title Glass broadsword
-						p.hint "4 Damage, Breakable"
-						ul.explanation
-							li Does four damage on contact with all three enemies that directly neighbor the character
-								ul.explanation
-									li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
-							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
+					.thumbnail.broadsword.base
+						span
+							.callout.thumbnail.broadsword.base
+							p.title Broadsword
+							p.hint "Wide Attack"
+							ul.explanation
+								li Does one damage on contact with all three enemies that directly neighbor the character
+									ul.explanation
+										li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
 
-			.weapon-type-container
+							table
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td
+									td.color
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td
+									td
+									td
+								tr
+									td
+									td.color
+									td
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
+					.thumbnail.broadsword.blood
+						span
+							.callout.thumbnail.broadsword.blood
+							p.title Blood Broadsword
+							p.hint "Kill to heal, low health = +damage"
+							ul.explanation
+								li Does one damage on contact with all three enemies that directly neighbor the character
+									ul.explanation
+										li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
+								li While the character is at 1/2 a heart, the broadsword will glow and deal infinite damage
+								li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+					.thumbnail.broadsword.gold
+						span
+							.callout.thumbnail.broadsword.gold
+							p.title Golden broadsword
+							p.hint "High dmg after gold pickup"
+							ul.explanation
+								li Does one damage on contact with all three enemies that directly neighbor the character
+									ul.explanation
+										li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
+								li When the character picks up gold, the broadsword will glow. If they attack on the next beat, the broadsword will deal infinite damage
+								li Adds +1 to the gold count on enemy drops (pre-multiplier). 
+									ul.explanation
+										li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold broadsword they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
+					.thumbnail.broadsword.tit
+						span
+							.callout.thumbnail.broadsword.tit
+							p.title Titanium broadsword
+							p.hint "2 Damage"
+							ul.explanation
+								li Does two damage on contact with all three enemies that directly neighbor the character
+									ul.explanation
+										li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
+					.thumbnail.broadsword.obsidian
+						span
+							.callout.thumbnail.broadsword.obsidian
+							p.title Obsidian broadsword
+							p.hint "Multiplier-based Damage"
+							ul.explanation
+								li Does 1-3 damage on contact with all three enemies that directly neighbor the character
+									ul.explanation
+										li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
+										li If the coin multiplier is at 1x (0 kills chained), the broadsword does 1 damage
+										li If the coin multiplier is at 2x (2-4 kills chained), the broadsword does 2 damage
+										li If the coin multiplier is at 3x (5+ kills chained), the broadsword does 3 damage
+					.thumbnail.broadsword.glass
+						span
+							.callout.thumbnail.broadsword.glass
+							p.title Glass broadsword
+							p.hint "4 Damage, Breakable"
+							ul.explanation
+								li Does four damage on contact with all three enemies that directly neighbor the character
+									ul.explanation
+										li The character can have 8 enemies surrounding them at any given time. The broadsword will attack three of them in a row/column on a given side. So a right attack will hit the enemies on the direct top-right, the direct right, and the direct bottom-right
+								li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
 
-				.thumbnail.cat.base
-					span
-						.callout.thumbnail.cat.base
-						p.title Cat O Nine Tails
-						p.hint "Move and attack"
-						ul.explanation
-							li Does one damage on contact with an enemy that is immediately adjacent to the character, and can also do one damage to an adjacent enemy while moving
-								ul.explanation
-									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
-									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
-						table(align="center")
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td.color
-								td.color
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td
-								td
-								td
-							tr
-								td.color
-								td.color
-								td
-								td
-								td
-							tr
-								td 
-								td
-								td
-								td
-								td
-				.thumbnail.cat.blood
-					span
-						.callout.thumbnail.cat.blood
-						p.title Blood Cat
-						p.hint "Kill to heal, low health = +damage"
-						ul.explanation
-							li Does one damage on contact with an enemy that is immediately adjacent to the character, and can also do one damage to an adjacent enemy while moving
-								ul.explanation
-									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
-									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
-							li While the character is at 1/2 a heart, the cat will glow and deal infinite damage
-							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
-				.thumbnail.cat.gold
-					span
-						.callout.thumbnail.cat.gold
-						p.title Golden cat
-						p.hint "High dmg after gold pickup"
-						ul.explanation
-							li Does one damage on contact with an enemy that is immediately adjacent to the character, and can also do one damage to an adjacent enemy while moving
-								ul.explanation
-									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
-									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
-							li When the character picks up gold, the cat will glow. If they attack on the next beat, the cat will deal infinite damage
-							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
-								ul.explanation
-									li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold cat they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
-				.thumbnail.cat.tit
-					span
-						.callout.thumbnail.cat.tit
-						p.title Titanium cat
-						p.hint "2 Damage"
-						ul.explanation
-							li Does two damage on contact with an enemy that is immediately adjacent to the character, and can also do two damage to an adjacent enemy while moving
-								ul.explanation
-									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
-									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
-				.thumbnail.cat.obsidian
-					span
-						.callout.thumbnail.cat.obsidian
-						p.title Obsidian cat
-						p.hint "Multiplier-based Damage"
-						ul.explanation
-							li Does 1-3 damage on contact with an enemy that is immediately adjacent to the character, and can also do 1-3 damage to an adjacent enemy while moving
-								ul.explanation
-									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
-									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
-									li If the coin multiplier is at 1x (0 kills chained), the cat does 1 damage
-									li If the coin multiplier is at 2x (2-4 kills chained), the cat does 2 damage
-									li If the coin multiplier is at 3x (5+ kills chained), the cat does 3 damage
-				.thumbnail.cat.glass
-					span
-						.callout.thumbnail.cat.glass
-						p.title Glass cat
-						p.hint "4 Damage, Breakable"
-						ul.explanation
-							li Does four damage on contact with an enemy that is immediately adjacent to the character, and can also do four damage to an adjacent enemy while moving
-								ul.explanation
-									li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
-									li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
-							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
+				.weapon-type-container
 
+					.thumbnail.cat.base
+						span
+							.callout.thumbnail.cat.base
+							p.title Cat O Nine Tails
+							p.hint "Move and attack"
+							ul.explanation
+								li Does one damage on contact with an enemy that is immediately adjacent to the character, and can also do one damage to an adjacent enemy while moving
+									ul.explanation
+										li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+										li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
+							table(align="center")
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td.color
+									td.color
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td
+									td
+									td
+								tr
+									td.color
+									td.color
+									td
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
+					.thumbnail.cat.blood
+						span
+							.callout.thumbnail.cat.blood
+							p.title Blood Cat
+							p.hint "Kill to heal, low health = +damage"
+							ul.explanation
+								li Does one damage on contact with an enemy that is immediately adjacent to the character, and can also do one damage to an adjacent enemy while moving
+									ul.explanation
+										li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+										li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
+								li While the character is at 1/2 a heart, the cat will glow and deal infinite damage
+								li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+					.thumbnail.cat.gold
+						span
+							.callout.thumbnail.cat.gold
+							p.title Golden cat
+							p.hint "High dmg after gold pickup"
+							ul.explanation
+								li Does one damage on contact with an enemy that is immediately adjacent to the character, and can also do one damage to an adjacent enemy while moving
+									ul.explanation
+										li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+										li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
+								li When the character picks up gold, the cat will glow. If they attack on the next beat, the cat will deal infinite damage
+								li Adds +1 to the gold count on enemy drops (pre-multiplier). 
+									ul.explanation
+										li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold cat they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
+					.thumbnail.cat.tit
+						span
+							.callout.thumbnail.cat.tit
+							p.title Titanium cat
+							p.hint "2 Damage"
+							ul.explanation
+								li Does two damage on contact with an enemy that is immediately adjacent to the character, and can also do two damage to an adjacent enemy while moving
+									ul.explanation
+										li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+										li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
+					.thumbnail.cat.obsidian
+						span
+							.callout.thumbnail.cat.obsidian
+							p.title Obsidian cat
+							p.hint "Multiplier-based Damage"
+							ul.explanation
+								li Does 1-3 damage on contact with an enemy that is immediately adjacent to the character, and can also do 1-3 damage to an adjacent enemy while moving
+									ul.explanation
+										li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+										li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
+										li If the coin multiplier is at 1x (0 kills chained), the cat does 1 damage
+										li If the coin multiplier is at 2x (2-4 kills chained), the cat does 2 damage
+										li If the coin multiplier is at 3x (5+ kills chained), the cat does 3 damage
+					.thumbnail.cat.glass
+						span
+							.callout.thumbnail.cat.glass
+							p.title Glass cat
+							p.hint "4 Damage, Breakable"
+							ul.explanation
+								li Does four damage on contact with an enemy that is immediately adjacent to the character, and can also do four damage to an adjacent enemy while moving
+									ul.explanation
+										li Can attack an enemy as you move. If an enemy is adjacent to the destination tile, the destination tile will be picked as the "center" of the attack. Otherwise, the origin tile will be picked as the "center" of the attack. 
+										li Once the tile to "center" the attack is decided on, it will try to attack the enemy on the tile that is left-adjacent to that chosen tile. If there is no enemy on the left-adjacent tile, the enemy on the right-adjacent tile will be attacked
+								li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
 
-			.weapon-type-container
+				.weapon-type-container
 
-				.thumbnail.flail.base
-					span
-						.callout.thumbnail.flail.base
-						p.title flail
-						p.hint "Knockback Attack"
-						ul.explanation
-							li Does one damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
-							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
-								ul.explanation
-									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
-									li Pinning enemies to walls (used heavily with almost all mini-bosses)
-						table
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td.color
-								td.color
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td
-								td
-								td
-							tr
-								td.color
-								td.color
-								td
-								td
-								td
-							tr
-								td 
-								td
-								td
-								td
-								td
-				.thumbnail.flail.blood
-					span
-						.callout.thumbnail.flail.blood
-						p.title Blood flail
-						p.hint "Kill to heal, low health = +damage"
-						ul.explanation
-							li Does one damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
-							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
-								ul.explanation
-									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
-									li Pinning enemies to walls (used heavily with almost all mini-bosses)
-							li While the character is at 1/2 a heart, the flail will glow and deal infinite damage
-							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
-				.thumbnail.flail.gold
-					span
-						.callout.thumbnail.flail.gold
-						p.title Golden flail
-						p.hint "High dmg after gold pickup"
-						ul.explanation
-							li Does one damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
-							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
-								ul.explanation
-									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
-									li Pinning enemies to walls (used heavily with almost all mini-bosses)
-							li When the character picks up gold, the flail will glow. If they attack on the next beat, the flail will deal infinite damage
-							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
-								ul.explanation
-									li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold flail they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
-				.thumbnail.flail.tit
-					span
-						.callout.thumbnail.flail.tit
-						p.title Titanium flail
-						p.hint "2 Damage"
-						ul.explanation
-							li Does two damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
-							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
-								ul.explanation
-									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
-									li Pinning enemies to walls (used heavily with almost all mini-bosses)
-				.thumbnail.flail.obsidian
-					span
-						.callout.thumbnail.flail.obsidian
-						p.title Obsidian flail
-						p.hint "Multiplier-based Damage"
-						ul.explanation
-							li Does 1-3 damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
-								ul.explanation
-									li If the coin multiplier is at 1x (0 kills chained), the flail does 1 damage
-									li If the coin multiplier is at 2x (2-4 kills chained), the flail does 2 damage
-									li If the coin multiplier is at 3x (5+ kills chained), the flail does 3 damage
-							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
-								ul.explanation
-									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
-									li Pinning enemies to walls (used heavily with almost all mini-bosses)
-				.thumbnail.flail.glass
-					span
-						.callout.thumbnail.flail.glass
-						p.title Glass flail
-						p.hint "4 Damage, Breakable"
-						ul.explanation
-							li Does four damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
-							li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
-								ul.explanation
-									li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
-									li Pinning enemies to walls (used heavily with almost all mini-bosses)
-							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
+					.thumbnail.flail.base
+						span
+							.callout.thumbnail.flail.base
+							p.title flail
+							p.hint "Knockback Attack"
+							ul.explanation
+								li Does one damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
+								li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
+									ul.explanation
+										li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
+										li Pinning enemies to walls (used heavily with almost all mini-bosses)
+							table
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td.color
+									td.color
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td
+									td
+									td
+								tr
+									td.color
+									td.color
+									td
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
+					.thumbnail.flail.blood
+						span
+							.callout.thumbnail.flail.blood
+							p.title Blood flail
+							p.hint "Kill to heal, low health = +damage"
+							ul.explanation
+								li Does one damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
+								li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
+									ul.explanation
+										li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
+										li Pinning enemies to walls (used heavily with almost all mini-bosses)
+								li While the character is at 1/2 a heart, the flail will glow and deal infinite damage
+								li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+					.thumbnail.flail.gold
+						span
+							.callout.thumbnail.flail.gold
+							p.title Golden flail
+							p.hint "High dmg after gold pickup"
+							ul.explanation
+								li Does one damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
+								li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
+									ul.explanation
+										li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
+										li Pinning enemies to walls (used heavily with almost all mini-bosses)
+								li When the character picks up gold, the flail will glow. If they attack on the next beat, the flail will deal infinite damage
+								li Adds +1 to the gold count on enemy drops (pre-multiplier). 
+									ul.explanation
+										li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold flail they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
+					.thumbnail.flail.tit
+						span
+							.callout.thumbnail.flail.tit
+							p.title Titanium flail
+							p.hint "2 Damage"
+							ul.explanation
+								li Does two damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
+								li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
+									ul.explanation
+										li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
+										li Pinning enemies to walls (used heavily with almost all mini-bosses)
+					.thumbnail.flail.obsidian
+						span
+							.callout.thumbnail.flail.obsidian
+							p.title Obsidian flail
+							p.hint "Multiplier-based Damage"
+							ul.explanation
+								li Does 1-3 damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
+									ul.explanation
+										li If the coin multiplier is at 1x (0 kills chained), the flail does 1 damage
+										li If the coin multiplier is at 2x (2-4 kills chained), the flail does 2 damage
+										li If the coin multiplier is at 3x (5+ kills chained), the flail does 3 damage
+								li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
+									ul.explanation
+										li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
+										li Pinning enemies to walls (used heavily with almost all mini-bosses)
+					.thumbnail.flail.glass
+						span
+							.callout.thumbnail.flail.glass
+							p.title Glass flail
+							p.hint "4 Damage, Breakable"
+							ul.explanation
+								li Does four damage on contact with all three enemies adjacent to the character (in the direction of the attack), as well as the two enemies that are adjacent to the character (perpendicular to the direction of the attack)
+								li Flails act very similarly to broadswords but will also knock the enemy backwards if they can survive the intital attack. There are two main uses for this knockback
+									ul.explanation
+										li Stopping certain enemies mid-attack cycle (locks mushrooms in their current attack state, can also redirect Dead Ringer)
+										li Pinning enemies to walls (used heavily with almost all mini-bosses)
+								li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
 
-			.weapon-type-container
+				.weapon-type-container
 
-				.thumbnail.whip.base
-					span
-						.callout.thumbnail.whip.base
-						p.title Whip
-						p.hint "Wider Attack"
-						ul.explanation
-							li Does one damage on contact with the closest enemy in its range
-							li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
-						table
-							tr
-								td
-								td.color
-								td
-								td
-								td
-							tr
-								td
-								td.color
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td
-								td
-								td
-							tr
-								td
-								td.color
-								td
-								td
-								td
-							tr
-								td 
-								td.color
-								td
-								td
-								td
-				.thumbnail.whip.blood
-					span
-						.callout.thumbnail.whip.blood
-						p.title Blood whip
-						p.hint "Kill to heal, low health = +damage"
-						ul.explanation
-							li Does one damage on contact with the closest enemy in its range
-							li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
-							li While the character is at 1/2 a heart, the whip will glow and deal infinite damage
-							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
-				.thumbnail.whip.gold
-					span
-						.callout.thumbnail.whip.gold
-						p.title Golden whip
-						p.hint "High dmg after gold pickup"
-						ul.explanation
-							li Does one damage on contact with the closest enemy in its range
-							li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
-							li When the character picks up gold, the whip will glow. If they attack on the next beat, the whip will deal infinite damage
-							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
-				.thumbnail.whip.tit
-					span
-						.callout.thumbnail.whip.tit
-						p.title Titanium whip
-						p.hint "2 Damage"
-						ul.explanation
-							li Does two damage on contact with the closest enemy in its range
-							li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
-				.thumbnail.whip.obsidian
-					span
-						.callout.thumbnail.whip.obsidian
-						p.title Obsidian whip
-						p.hint "Multiplier-based Damage"
-						ul.explanation
-							li Does 1-3 damage on contact with the closest enemy in its range
-								ul.explanation
-									li If the coin multiplier is at 1x (0 kills chained), the whip does 1 damage
-									li If the coin multiplier is at 2x (2-4 kills chained), the whip does 2 damage
-									li If the coin multiplier is at 3x (5+ kills chained), the whip does 3 damage
-							li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
-				.thumbnail.whip.glass
-					span
-						.callout.thumbnail.whip.glass
-						p.title Glass whip
-						p.hint "4 Damage, Breakable"
-						ul.explanation
-							li Does four damage on contact with the closest enemy in its range
-							li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
-							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
+					.thumbnail.whip.base
+						span
+							.callout.thumbnail.whip.base
+							p.title Whip
+							p.hint "Wider Attack"
+							ul.explanation
+								li Does one damage on contact with the closest enemy in its range
+								li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
+							table
+								tr
+									td
+									td.color
+									td
+									td
+									td
+								tr
+									td
+									td.color
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td
+									td
+									td
+								tr
+									td
+									td.color
+									td
+									td
+									td
+								tr
+									td 
+									td.color
+									td
+									td
+									td
+					.thumbnail.whip.blood
+						span
+							.callout.thumbnail.whip.blood
+							p.title Blood whip
+							p.hint "Kill to heal, low health = +damage"
+							ul.explanation
+								li Does one damage on contact with the closest enemy in its range
+								li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
+								li While the character is at 1/2 a heart, the whip will glow and deal infinite damage
+								li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+					.thumbnail.whip.gold
+						span
+							.callout.thumbnail.whip.gold
+							p.title Golden whip
+							p.hint "High dmg after gold pickup"
+							ul.explanation
+								li Does one damage on contact with the closest enemy in its range
+								li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
+								li When the character picks up gold, the whip will glow. If they attack on the next beat, the whip will deal infinite damage
+								li Adds +1 to the gold count on enemy drops (pre-multiplier). 
+					.thumbnail.whip.tit
+						span
+							.callout.thumbnail.whip.tit
+							p.title Titanium whip
+							p.hint "2 Damage"
+							ul.explanation
+								li Does two damage on contact with the closest enemy in its range
+								li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
+					.thumbnail.whip.obsidian
+						span
+							.callout.thumbnail.whip.obsidian
+							p.title Obsidian whip
+							p.hint "Multiplier-based Damage"
+							ul.explanation
+								li Does 1-3 damage on contact with the closest enemy in its range
+									ul.explanation
+										li If the coin multiplier is at 1x (0 kills chained), the whip does 1 damage
+										li If the coin multiplier is at 2x (2-4 kills chained), the whip does 2 damage
+										li If the coin multiplier is at 3x (5+ kills chained), the whip does 3 damage
+								li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
+					.thumbnail.whip.glass
+						span
+							.callout.thumbnail.whip.glass
+							p.title Glass whip
+							p.hint "4 Damage, Breakable"
+							ul.explanation
+								li Does four damage on contact with the closest enemy in its range
+								li Whips have a range that is five tiles wide, but one tile deep, against the direction you attack in. So if you attack right, the whip will look at these tiles with respect to your position: (two above/one right, one above/one right, one right, one below/one right, and two below/one right)
+								li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
 
-			.weapon-type-container
+				.weapon-type-container
 
-				.thumbnail.bow.base
-					span
-						.callout.thumbnail.bow.base
-						p.title Bow
-						p.hint "Ranged Attack"
-						ul.explanation
-							li Does one damage to the first enemy found within its range
-							li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
-						table
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td.color
-								td.color
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td 
-								td
-								td
-								td
-								td
-				.thumbnail.bow.blood
-					span
-						.callout.thumbnail.bow.blood
-						p.title Blood bow
-						p.hint "Kill to heal, low health = +damage"
-						ul.explanation
-							li Does one damage to the first enemy found within its range
-							li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
-							li While the character is at 1/2 a heart, the bow will glow and deal infinite damage
-							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
-				.thumbnail.bow.gold
-					span
-						.callout.thumbnail.bow.gold
-						p.title Golden bow
-						p.hint "High dmg after gold pickup"
-						ul.explanation
-							li Does one damage to the first enemy found within its range
-							li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
-							li When the character picks up gold, the bow will glow. If they attack on the next beat, the bow will deal infinite damage
-							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
-								ul.explanation
-									li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold bow they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
-				.thumbnail.bow.tit
-					span
-						.callout.thumbnail.bow.tit
-						p.title Titanium bow
-						p.hint "2 Damage"
-						ul.explanation
-							li Does two damage to the first enemy found within its range
-							li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
-				.thumbnail.bow.obsidian
-					span
-						.callout.thumbnail.bow.obsidian
-						p.title Obsidian bow
-						p.hint "Multiplier-based Damage"
-						ul.explanation
-							li Does 1-3 damage to the first enemy found within its range
-								ul.explanation
-									li If the coin multiplier is at 1x (0 kills chained), the bow does 1 damage
-									li If the coin multiplier is at 2x (2-4 kills chained), the bow does 2 damage
-									li If the coin multiplier is at 3x (5+ kills chained), the bow does 3 damage
-							li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
-				.thumbnail.bow.glass
-					span
-						.callout.thumbnail.bow.glass
-						p.title Glass bow
-						p.hint "4 Damage, Breakable"
-						ul.explanation
-							li Does four damage to the first enemy found within its range
-							li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
-							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
+					.thumbnail.bow.base
+						span
+							.callout.thumbnail.bow.base
+							p.title Bow
+							p.hint "Ranged Attack"
+							ul.explanation
+								li Does one damage to the first enemy found within its range
+								li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
+							table
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td.color
+									td.color
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
+					.thumbnail.bow.blood
+						span
+							.callout.thumbnail.bow.blood
+							p.title Blood bow
+							p.hint "Kill to heal, low health = +damage"
+							ul.explanation
+								li Does one damage to the first enemy found within its range
+								li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
+								li While the character is at 1/2 a heart, the bow will glow and deal infinite damage
+								li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+					.thumbnail.bow.gold
+						span
+							.callout.thumbnail.bow.gold
+							p.title Golden bow
+							p.hint "High dmg after gold pickup"
+							ul.explanation
+								li Does one damage to the first enemy found within its range
+								li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
+								li When the character picks up gold, the bow will glow. If they attack on the next beat, the bow will deal infinite damage
+								li Adds +1 to the gold count on enemy drops (pre-multiplier). 
+									ul.explanation
+										li i.e. if an enemy drops 1 gold at 1x multiplier, with the gold bow they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
+					.thumbnail.bow.tit
+						span
+							.callout.thumbnail.bow.tit
+							p.title Titanium bow
+							p.hint "2 Damage"
+							ul.explanation
+								li Does two damage to the first enemy found within its range
+								li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
+					.thumbnail.bow.obsidian
+						span
+							.callout.thumbnail.bow.obsidian
+							p.title Obsidian bow
+							p.hint "Multiplier-based Damage"
+							ul.explanation
+								li Does 1-3 damage to the first enemy found within its range
+									ul.explanation
+										li If the coin multiplier is at 1x (0 kills chained), the bow does 1 damage
+										li If the coin multiplier is at 2x (2-4 kills chained), the bow does 2 damage
+										li If the coin multiplier is at 3x (5+ kills chained), the bow does 3 damage
+								li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
+					.thumbnail.bow.glass
+						span
+							.callout.thumbnail.bow.glass
+							p.title Glass bow
+							p.hint "4 Damage, Breakable"
+							ul.explanation
+								li Does four damage to the first enemy found within its range
+								li Bows have a range of three tiles deep, but one tile wide; they act exactly the same as spears, except they have one additional range and cannot be thrown
+								li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
 
-			.weapon-type-container
+				.weapon-type-container
 
-				.thumbnail.xbow.base.threeloaded
-					span
-						.callout.thumbnail.xbow.base
-						p.title Crossbow
-						p.hint "Ranged Attack, Needs Reloading, Piercing"
-						ul.explanation
-							li Does one damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
-							li Crossbow projectiles do piercing damage
-								ul.explanation
-									li Armadillos that are rolling
-									li Skeleton Knights
-									li Skeleton Riders
-									li Blademasters
-									li Gargoyles
-							li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
-						table
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td.color
-								td.color
-								td.color
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td 
-								td
-								td
-								td
-								td
-				.thumbnail.xbow.blood.threeloaded
-					span
-						.callout.thumbnail.xbow.blood
-						p.title Blood Crossbow
-						p.hint "Kill to heal, low health = +damage"
-						ul.explanation
-							li Does one damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
-							li Crossbow projectiles do piercing damage
-								ul.explanation
-									li Armadillos that are rolling
-									li Skeleton Knights
-									li Skeleton Riders
-									li Blademasters
-									li Gargoyles
-							li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
-							li While the character is at 1/2 a heart, the crossbow will glow and deal infinite damage
-							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
-				.thumbnail.xbow.gold.threeloaded
-					span
-						.callout.thumbnail.xbow.gold
-						p.title Golden Crossbow
-						p.hint "High dmg after gold pickup"
-						ul.explanation
-							li Does one damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
-							li Crossbow projectiles do piercing damage
-								ul.explanation
-									li Armadillos that are rolling
-									li Skeleton Knights
-									li Skeleton Riders
-									li Blademasters
-									li Gargoyles
-							li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
-							li When the character picks up gold, the crossbow will glow. If they attack on the next beat, the crossbow will deal infinite damage
-							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
-								ul.explanation
-									li i.e. if an enemy drops 1 gold at 1x multiplier, with the golden crossbow they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
-				.thumbnail.xbow.tit.threeloaded
-					span
-						.callout.thumbnail.xbow.tit
-						p.title Titanium Crossbow
-						p.hint "2 Damage"
-						ul.explanation
-							li Does two damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
-							li Crossbow projectiles do piercing damage
-								ul.explanation
-									li Armadillos that are rolling
-									li Skeleton Knights
-									li Skeleton Riders
-									li Blademasters
-									li Gargoyles
-							li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
-				.thumbnail.xbow.obsidian.threeloaded
-					span
-						.callout.thumbnail.xbow.obsidian
-						p.title Obsidian Crossbow
-						p.hint "Multiplier-based Damage"
-						ul.explanation
-							li Does 1-3 damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
-								ul.explanation
-									li If the coin multiplier is at 1x (0 kills chained), the crossbow does 1 damage
-									li If the coin multiplier is at 2x (2-4 kills chained), the crossbow does 2 damage
-									li If the coin multiplier is at 3x (5+ kills chained), the crossbow does 3 damage
-							li Crossbow projectiles do piercing damage
-								ul.explanation
-									li Armadillos that are rolling
-									li Skeleton Knights
-									li Skeleton Riders
-									li Blademasters
-									li Gargoyles
-							li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
-				.thumbnail.xbow.glass.threeloaded
-					span
-						.callout.thumbnail.xbow.glass
-						p.title Glass Crossbow
-						p.hint "4 Damage, Breakable"
-						ul.explanation
-							li Does four damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
-							li Crossbow projectiles do piercing damage
-								ul.explanation
-									li Armadillos that are rolling
-									li Skeleton Knights
-									li Skeleton Riders
-									li Blademasters
-									li Gargoyles
-							li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
-							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
+					.thumbnail.xbow.base.threeloaded
+						span
+							.callout.thumbnail.xbow.base
+							p.title Crossbow
+							p.hint "Ranged Attack, Needs Reloading, Piercing"
+							ul.explanation
+								li Does one damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
+								li Crossbow projectiles do piercing damage
+									ul.explanation
+										li Armadillos that are rolling
+										li Skeleton Knights
+										li Skeleton Riders
+										li Blademasters
+										li Gargoyles
+								li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
+							table
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td.color
+									td.color
+									td.color
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
+					.thumbnail.xbow.blood.threeloaded
+						span
+							.callout.thumbnail.xbow.blood
+							p.title Blood Crossbow
+							p.hint "Kill to heal, low health = +damage"
+							ul.explanation
+								li Does one damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
+								li Crossbow projectiles do piercing damage
+									ul.explanation
+										li Armadillos that are rolling
+										li Skeleton Knights
+										li Skeleton Riders
+										li Blademasters
+										li Gargoyles
+								li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
+								li While the character is at 1/2 a heart, the crossbow will glow and deal infinite damage
+								li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+					.thumbnail.xbow.gold.threeloaded
+						span
+							.callout.thumbnail.xbow.gold
+							p.title Golden Crossbow
+							p.hint "High dmg after gold pickup"
+							ul.explanation
+								li Does one damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
+								li Crossbow projectiles do piercing damage
+									ul.explanation
+										li Armadillos that are rolling
+										li Skeleton Knights
+										li Skeleton Riders
+										li Blademasters
+										li Gargoyles
+								li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
+								li When the character picks up gold, the crossbow will glow. If they attack on the next beat, the crossbow will deal infinite damage
+								li Adds +1 to the gold count on enemy drops (pre-multiplier). 
+									ul.explanation
+										li i.e. if an enemy drops 1 gold at 1x multiplier, with the golden crossbow they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
+					.thumbnail.xbow.tit.threeloaded
+						span
+							.callout.thumbnail.xbow.tit
+							p.title Titanium Crossbow
+							p.hint "2 Damage"
+							ul.explanation
+								li Does two damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
+								li Crossbow projectiles do piercing damage
+									ul.explanation
+										li Armadillos that are rolling
+										li Skeleton Knights
+										li Skeleton Riders
+										li Blademasters
+										li Gargoyles
+								li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
+					.thumbnail.xbow.obsidian.threeloaded
+						span
+							.callout.thumbnail.xbow.obsidian
+							p.title Obsidian Crossbow
+							p.hint "Multiplier-based Damage"
+							ul.explanation
+								li Does 1-3 damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
+									ul.explanation
+										li If the coin multiplier is at 1x (0 kills chained), the crossbow does 1 damage
+										li If the coin multiplier is at 2x (2-4 kills chained), the crossbow does 2 damage
+										li If the coin multiplier is at 3x (5+ kills chained), the crossbow does 3 damage
+								li Crossbow projectiles do piercing damage
+									ul.explanation
+										li Armadillos that are rolling
+										li Skeleton Knights
+										li Skeleton Riders
+										li Blademasters
+										li Gargoyles
+								li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
+					.thumbnail.xbow.glass.threeloaded
+						span
+							.callout.thumbnail.xbow.glass
+							p.title Glass Crossbow
+							p.hint "4 Damage, Breakable"
+							ul.explanation
+								li Does four damage to the first enemy found within its range. Acts similarly to bows, but has 4-deep range instead of 3-deep range
+								li Crossbow projectiles do piercing damage
+									ul.explanation
+										li Armadillos that are rolling
+										li Skeleton Knights
+										li Skeleton Riders
+										li Blademasters
+										li Gargoyles
+								li Crossbows must be reloaded to fire projectiles. Reloads fill the crossbow with 3 arrows that fire at 4-deep range. When unloaded, the crossbow functions as a piercing-less dagger at the same weapon tier
+								li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
 
-			.weapon-type-container
+				.weapon-type-container
 
-				.thumbnail.rapier.base
-					span
-						.callout.thumbnail.rapier.base
-						p.title Rapier
-						p.hint "Lunge for Double Damage"
-						ul.explanation
-							li Does one damage if attacking an immediately adjacent enemy within range, otherwise two damage if lunging at an enemy two tiles away
-							li Rapiers have two attack styles: direct and lunging
-								ul.explanation
-									li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
-									li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
-							li Rapiers have a wide range of one tile and a deep range of two tiles
-						table
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td.color
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td 
-								td
-								td
-								td
-								td
-				.thumbnail.rapier.blood
-					span
-						.callout.thumbnail.rapier.blood
-						p.title Blood Rapier
-						p.hint "Kill to heal, low health = +damage"
-						ul.explanation
-							li Does one damage if attacking an immediately adjacent enemy within range, otherwise two damage if lunging at an enemy two tiles away
-							li Rapiers have two attack styles: direct and lunging
-								ul.explanation
-									li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
-									li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
-							li Rapiers have a wide range of one tile and a deep range of two tiles
-							li While the character is at 1/2 a heart, the Rapier will glow and deal infinite damage
-							li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
-				.thumbnail.rapier.gold
-					span
-						.callout.thumbnail.rapier.gold
-						p.title Golden Rapier
-						p.hint "High dmg after gold pickup"
-						ul.explanation
-							li Does one damage if attacking an immediately adjacent enemy within range, otherwise two damage if lunging at an enemy two tiles away
-							li Rapiers have two attack styles: direct and lunging
-								ul.explanation
-									li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
-									li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
-							li Rapiers have a wide range of one tile and a deep range of two tiles
-							li When the character picks up gold, the rapier will glow. If they attack on the next beat, the rapier will deal infinite damage
-							li Adds +1 to the gold count on enemy drops (pre-multiplier). 
-								ul.explanation
-									li i.e. if an enemy drops 1 gold at 1x multiplier, with the golden rapier they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
-				.thumbnail.rapier.tit
-					span
-						.callout.thumbnail.rapier.tit
-						p.title Titanium Rapier
-						p.hint "2 Damage"
-						ul.explanation
-							li Does two damage if attacking an immediately adjacent enemy within range, otherwise four damage if lunging at an enemy two tiles away
-							li Rapiers have two attack styles: direct and lunging
-								ul.explanation
-									li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
-									li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
-							li Rapiers have a wide range of one tile and a deep range of two tiles
-				.thumbnail.rapier.obsidian
-					span
-						.callout.thumbnail.rapier.obsidian
-						p.title Obsidian Rapier
-						p.hint "Multiplier-based Damage"
-						ul.explanation
-							li Does 1/2/3 damage if attacking an immediately adjacent enemy within range, otherwise 2/4/6 damage if lunging at an enemy two tiles away
-								ul.explanation
-									li If the coin multiplier is at 1x (0 kills chained), the rapier does 1 damage on direct, 2 damage on lunging
-									li If the coin multiplier is at 2x (2-4 kills chained), the rapier does 2 damage on direct, 4 damage on lunging
-									li If the coin multiplier is at 3x (5+ kills chained), the rapier does 3 damage on direct, 6 damage on lunging
-							li Rapiers have two attack styles: direct and lunging
-								ul.explanation
-									li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
-									li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
-							li Rapiers have a wide range of one tile and a deep range of two tiles
-				.thumbnail.rapier.glass
-					span
-						.callout.thumbnail.rapier.glass
-						p.title Glass rapier
-						p.hint "4 Damage, Breakable"
-						ul.explanation
-							li Does four damage if attacking an immediately adjacent enemy within range, otherwise eight damage if lunging at an enemy two tiles away
-							li Rapiers have two attack styles: direct and lunging
-								ul.explanation
-									li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
-									li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
-							li Rapiers have a wide range of one tile and a deep range of two tiles
-							li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
+					.thumbnail.rapier.base
+						span
+							.callout.thumbnail.rapier.base
+							p.title Rapier
+							p.hint "Lunge for Double Damage"
+							ul.explanation
+								li Does one damage if attacking an immediately adjacent enemy within range, otherwise two damage if lunging at an enemy two tiles away
+								li Rapiers have two attack styles: direct and lunging
+									ul.explanation
+										li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
+										li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
+								li Rapiers have a wide range of one tile and a deep range of two tiles
+							table
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td.color
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
+					.thumbnail.rapier.blood
+						span
+							.callout.thumbnail.rapier.blood
+							p.title Blood Rapier
+							p.hint "Kill to heal, low health = +damage"
+							ul.explanation
+								li Does one damage if attacking an immediately adjacent enemy within range, otherwise two damage if lunging at an enemy two tiles away
+								li Rapiers have two attack styles: direct and lunging
+									ul.explanation
+										li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
+										li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
+								li Rapiers have a wide range of one tile and a deep range of two tiles
+								li While the character is at 1/2 a heart, the Rapier will glow and deal infinite damage
+								li Heals the character for 1/2 heart every ten kills. If using this weapon with the crown of thorns, the cooldown is reduced from 10 kills to 5 kills
+					.thumbnail.rapier.gold
+						span
+							.callout.thumbnail.rapier.gold
+							p.title Golden Rapier
+							p.hint "High dmg after gold pickup"
+							ul.explanation
+								li Does one damage if attacking an immediately adjacent enemy within range, otherwise two damage if lunging at an enemy two tiles away
+								li Rapiers have two attack styles: direct and lunging
+									ul.explanation
+										li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
+										li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
+								li Rapiers have a wide range of one tile and a deep range of two tiles
+								li When the character picks up gold, the rapier will glow. If they attack on the next beat, the rapier will deal infinite damage
+								li Adds +1 to the gold count on enemy drops (pre-multiplier). 
+									ul.explanation
+										li i.e. if an enemy drops 1 gold at 1x multiplier, with the golden rapier they will drop 2 gold at 1x, 4 gold at 2x, 6 gold at 3x
+					.thumbnail.rapier.tit
+						span
+							.callout.thumbnail.rapier.tit
+							p.title Titanium Rapier
+							p.hint "2 Damage"
+							ul.explanation
+								li Does two damage if attacking an immediately adjacent enemy within range, otherwise four damage if lunging at an enemy two tiles away
+								li Rapiers have two attack styles: direct and lunging
+									ul.explanation
+										li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
+										li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
+								li Rapiers have a wide range of one tile and a deep range of two tiles
+					.thumbnail.rapier.obsidian
+						span
+							.callout.thumbnail.rapier.obsidian
+							p.title Obsidian Rapier
+							p.hint "Multiplier-based Damage"
+							ul.explanation
+								li Does 1/2/3 damage if attacking an immediately adjacent enemy within range, otherwise 2/4/6 damage if lunging at an enemy two tiles away
+									ul.explanation
+										li If the coin multiplier is at 1x (0 kills chained), the rapier does 1 damage on direct, 2 damage on lunging
+										li If the coin multiplier is at 2x (2-4 kills chained), the rapier does 2 damage on direct, 4 damage on lunging
+										li If the coin multiplier is at 3x (5+ kills chained), the rapier does 3 damage on direct, 6 damage on lunging
+								li Rapiers have two attack styles: direct and lunging
+									ul.explanation
+										li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
+										li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
+								li Rapiers have a wide range of one tile and a deep range of two tiles
+					.thumbnail.rapier.glass
+						span
+							.callout.thumbnail.rapier.glass
+							p.title Glass rapier
+							p.hint "4 Damage, Breakable"
+							ul.explanation
+								li Does four damage if attacking an immediately adjacent enemy within range, otherwise eight damage if lunging at an enemy two tiles away
+								li Rapiers have two attack styles: direct and lunging
+									ul.explanation
+										li Direct attacks act exactly like daggers, and only affect immediately adjacent enemies
+										li Lunging attacks happen when moving towards an enemy two tiles away, and doubles the damage of the rapier itself (not double the damage of your whole build)
+								li Rapiers have a wide range of one tile and a deep range of two tiles
+								li Taking damage while holding this will turn it into the Glass Shard, dropping it at the character's feet
 
-			.weapon-type-container
+				.weapon-type-container
 
-				.thumbnail.blunderbuss
+					.thumbnail.blunderbuss
+						span
+							.callout.thumbnail.blunderbuss
+							p.title Blunderbuss
+							p.hint "Conical Blast, Needs Reloading, Piercing"
+							ul.explanation
+								li If loaded and fired, shoots a cone attack that deals two damage to all enemies within the cone, and knocks the character backwards one tile. Knockback occurs after all enemies within the cone have been damaged.
+								li The blunderbuss can only have one shot loaded at a time. If unloaded, acts like a normal, piercing-less titanium dagger
+								li Does piercing damage (when loaded); this means it damages several enemies that normally cannot be damaged directly
+									ul.explanation
+										li Armadillos that are rolling
+										li Skeleton Knights
+										li Skeleton Riders
+										li Blademasters
+										li Gargoyles
+								li Kills Melody on pickup
+							table
+								tr
+									td
+									td
+									td
+									td.color
+									td
+								tr
+									td
+									td
+									td.color
+									td.color
+									td
+								tr
+									td C
+									td.color
+									td.color
+									td.color
+									td
+								tr
+									td
+									td
+									td.color
+									td.color
+									td
+								tr
+									td 
+									td
+									td
+									td.color
+									td
+
+					.thumbnail.rifle
+						span
+							.callout.thumbnail.rifle
+							p.title Rifle
+							p.hint "Ranged, Needs Loading, Piercing"
+							ul.explanation
+								li If loaded and fired, shoots a straight projectile that deals three damage to all enemies within the line, and knocks the character backwards one tile. Knockback occurs after all enemies within the line have been damaged. The range is 20 tiles deep, or until the projectile reaches a wall
+								li The rifle can have up to three shots loaded at a time. Moving normally requires the rifle to be completely unloaded. If unloaded, acts like a normal, piercing-less base dagger
+								li Does piercing damage (when loaded); this means it damages several enemies that normally cannot be damaged directly
+									ul.explanation
+										li Armadillos that are rolling
+										li Skeleton Knights
+										li Skeleton Riders
+										li Blademasters
+										li Gargoyles
+							table
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td C
+									td.color
+									td.color
+									td.color
+									td.color
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
+
+				.weapon-type-container
+
+					.thumbnail.lute
+						span
+							.callout.thumbnail.lute
+							p.title Golden Lute
+							p.hint "Golden Lute"
+							ul.explanation
+								li Acts similarly to the boots of pain, in that it deals damage from moving into enemies (however the lute can also deal damage to enemies you move away from)
+								li Locked at 1 damage permanently, but deals damage to all adjacent enemies when moving, meaning enemies adjacent to your starting tile and enemies adjacent to your destination tile
+								li The diagram below refers to C1 as the starting tile, and C2 as the destination tile when moving
+							table
+								tr
+									td
+									td
+									td
+									td
+									td
+								tr
+									td
+									td.color
+									td.color
+									td
+									td
+								tr
+									td.color
+									td C1
+									td C2
+									td.color
+									td
+								tr
+									td 
+									td.color
+									td.color
+									td
+									td
+								tr
+									td 
+									td
+									td
+									td
+									td
+
+		.container.head
+
+			h2 Head
+
+			.offset-wrapper
+
+				.thumbnail.blast_helm
 					span
-						.callout.thumbnail.blunderbuss
-						p.title Blunderbuss
-						p.hint "Conical Blast, Needs Reloading, Piercing"
+						.callout.thumbnail.blast_helm
+						p.title Blast Helm
+						p.hint "Bomb Immunity, +3 Bombs"
 						ul.explanation
-							li If loaded and fired, shoots a cone attack that deals two damage to all enemies within the cone, and knocks the character backwards one tile. Knockback occurs after all enemies within the cone have been damaged.
-							li The blunderbuss can only have one shot loaded at a time. If unloaded, acts like a normal, piercing-less titanium dagger
-							li Does piercing damage (when loaded); this means it damages several enemies that normally cannot be damaged directly
+							li On the first time it is picked up, adds 3 bombs to the character's inventory
+							li Gives damage immunity from all explosions, which include
 								ul.explanation
-									li Armadillos that are rolling
-									li Skeleton Knights
-									li Skeleton Riders
-									li Blademasters
-									li Gargoyles
-							li Kills Melody on pickup
-						table
-							tr
-								td
-								td
-								td
-								td.color
-								td
-							tr
-								td
-								td
-								td.color
-								td.color
-								td
-							tr
-								td C
-								td.color
-								td.color
-								td.color
-								td
-							tr
-								td
-								td
-								td.color
-								td.color
-								td
-							tr
-								td 
-								td
-								td
-								td.color
-								td
-
-				.thumbnail.rifle
+									li Character bombs
+									li Bomb trap bombs
+									li Goblin Bomber bombs/explosions
+									li Pixie explosions
+							li Immediately detonates bombs laid by the character, but does not immediately detonate enemy/environmental bombs
+							li Removed from Eli's pool
+				.thumbnail.circlet
 					span
-						.callout.thumbnail.rifle
-						p.title Rifle
-						p.hint "Ranged, Needs Loading, Piercing"
+						.callout.thumbnail.circlet
+						p.title Circlet of Telepathy
+						p.hint "See all enemies"
 						ul.explanation
-							li If loaded and fired, shoots a straight projectile that deals three damage to all enemies within the line, and knocks the character backwards one tile. Knockback occurs after all enemies within the line have been damaged. The range is 20 tiles deep, or until the projectile reaches a wall
-							li The rifle can have up to three shots loaded at a time. Moving normally requires the rifle to be completely unloaded. If unloaded, acts like a normal, piercing-less base dagger
-							li Does piercing damage (when loaded); this means it damages several enemies that normally cannot be damaged directly
+							li Shows all enemies and NPCs on the overworld view and on the minimap, without the need for a torch, map, etc.
+							li Spirits (wights, ghasts, etc.) are immediately forced to spawn (not aggro) when picking up this item, or entering a level with this item
+				.thumbnail.greed
+					span
+						.callout.thumbnail.greed
+						p.title Crown of Greed
+						p.hint "Double coins + leak coins"
+						ul.explanation
+							li Drops when the shopkeeper is killed on all characters
+							li Doubles coin pickups, but only while worn, not when the gold is dropped
+								ul.explanation 
+									li In other words, if a pile of 40 gold is created while wearing this crown, picking it up will give 80 gold
+									li However, creating the pile with the crown on, removing the crown, and then picking up the pile would instead give 40 gold
+							li Leaks one gold from the character's inventory every beat that the game ticks 
 								ul.explanation
-									li Armadillos that are rolling
-									li Skeleton Knights
-									li Skeleton Riders
-									li Blademasters
-									li Gargoyles
-						table
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td C
-								td.color
-								td.color
-								td.color
-								td.color
-							tr
-								td
-								td
-								td
-								td
-								td
-							tr
-								td 
-								td
-								td
-								td
-								td
-
-			.weapon-type-container
-
-				.thumbnail.lute
+									li Note that this does not mean every beat the player acts; the drain occurs regardless of player action 
+							li Kills Monk and Coda on pickup from "Vow of Poverty"
+				.thumbnail.teleportation
 					span
-						.callout.thumbnail.lute
-						p.title Golden Lute
-						p.hint "Golden Lute"
+						.callout.thumbnail.teleportation
+						p.title Crown of Teleportation
+						p.hint "Teleport on hit"
 						ul.explanation
-							li Acts similarly to the boots of pain, in that it deals damage from moving into enemies (however the lute can also deal damage to enemies you move away from)
-							li Locked at 1 damage permanently, but deals damage to all adjacent enemies when moving, meaning enemies adjacent to your starting tile and enemies adjacent to your destination tile
+							li When worn, if the character is damaged and the protect-item order reaches the head slot, the following happens:
+								ul.explanation
+									li No damage is taken for that hit
+									li The crown breaks
+									li The character is teleported to the floor's normal shop (this can include locked normal shops)
+							li If the above conditions happen during a boss fight, the character is randomly teleported within the boss room
+				.thumbnail.thorns
+					span
+						.callout.thumbnail.thorns
+						p.title Crown of Thorns
+						p.hint "10 kills = heal"
+						ul.explanation
+							li Each time this item is picked up, the player takes 0.5 hearts of damage
+							li After killing 10 enemies while wearing this item, the character will be healed for 0.5 health
+							li If wearing this and using a blood-tier weapon, the character will be healed for 0.5 health after 5 kills instead of 10
+							li Removed from Aria's and Coda's pools
+				.thumbnail.jaw
+					span
+						.callout.thumbnail.jaw
+						p.title Glass Jaw
+						p.hint "Double all dmg, frailty"
+						ul.explanation
+							li While worn, all damage on the character's build is doubled
+							li While the Karate Gi doubles weapon damage, this item doubles the damage of the entire build
+								ul.explanation
+									li For example, if Cadence has Titanium Longsword + Ring of Might, their normal damage would be 3
+									li If you add only Karate Gi, their damage is 5 (4 longsword + 1 might)
+									li If you add only Glass Jaw, their damage is 6 (4 longsword + 2 might)
+									li If you add both Karate Gi and Glass Jaw, their damage is 10 (4*2=8 longsword + 2 might)
+							li Kills the character immediately when taking any damage
+								ul.explanation
+									li If a potion is equipped when taking damage, the potion will be used and the Glass Jaw will break
+				.thumbnail.helm
+					span
+						.callout.thumbnail.helm
+						p.title Helm
+						p.hint "+0.5 defense"
+						ul.explanation
+							li While worn, adds 0.5 hearts of defense to the character's armor stack
+							li No really, that's all it does
+				.thumbnail.miners
+					span
+						.callout.thumbnail.miners
+						p.title Miner's Cap
+						p.hint "Move + Dig"
+						ul.explanation
+							li While worn, adds +1 to dig strength and +1 to torch radius
+							li Digs as you move in a pattern similar to how Golden Lute attacking works, except it only applies to tiles adjacent to the destination tile, and does not affect tiles adjacent to the origin tile
 							li The diagram below refers to C1 as the starting tile, and C2 as the destination tile when moving
 						table
 							tr
@@ -1241,19 +1373,19 @@ block content
 								td
 							tr
 								td
-								td.color
+								td
 								td.color
 								td
 								td
 							tr
-								td.color
+								td
 								td C1
 								td C2
 								td.color
 								td
 							tr
 								td 
-								td.color
+								td
 								td.color
 								td
 								td
@@ -1263,231 +1395,111 @@ block content
 								td
 								td
 								td
-
-		.container.head
-
-			h2 Head
-
-			.thumbnail.blast_helm
-				span
-					.callout.thumbnail.blast_helm
-					p.title Blast Helm
-					p.hint "Bomb Immunity, +3 Bombs"
-					ul.explanation
-						li On the first time it is picked up, adds 3 bombs to the character's inventory
-						li Gives damage immunity from all explosions, which include
-							ul.explanation
-								li Character bombs
-								li Bomb trap bombs
-								li Goblin Bomber bombs/explosions
-								li Pixie explosions
-						li Immediately detonates bombs laid by the character, but does not immediately detonate enemy/environmental bombs
-						li Removed from Eli's pool
-			.thumbnail.circlet
-				span
-					.callout.thumbnail.circlet
-					p.title Circlet of Telepathy
-					p.hint "See all enemies"
-					ul.explanation
-						li Shows all enemies and NPCs on the overworld view and on the minimap, without the need for a torch, map, etc.
-						li Spirits (wights, ghasts, etc.) are immediately forced to spawn (not aggro) when picking up this item, or entering a level with this item
-			.thumbnail.greed
-				span
-					.callout.thumbnail.greed
-					p.title Crown of Greed
-					p.hint "Double coins + leak coins"
-					ul.explanation
-						li Drops when the shopkeeper is killed on all characters
-						li Doubles coin pickups, but only while worn, not when the gold is dropped
-							ul.explanation 
-								li In other words, if a pile of 40 gold is created while wearing this crown, picking it up will give 80 gold
-								li However, creating the pile with the crown on, removing the crown, and then picking up the pile would instead give 40 gold
-						li Leaks one gold from the character's inventory every beat that the game ticks 
-							ul.explanation
-								li Note that this does not mean every beat the player acts; the drain occurs regardless of player action 
-						li Kills Monk and Coda on pickup from "Vow of Poverty"
-			.thumbnail.teleportation
-				span
-					.callout.thumbnail.teleportation
-					p.title Crown of Teleportation
-					p.hint "Teleport on hit"
-					ul.explanation
-						li When worn, if the character is damaged and the protect-item order reaches the head slot, the following happens:
-							ul.explanation
-								li No damage is taken for that hit
-								li The crown breaks
-								li The character is teleported to the floor's normal shop (this can include locked normal shops)
-						li If the above conditions happen during a boss fight, the character is randomly teleported within the boss room
-			.thumbnail.thorns
-				span
-					.callout.thumbnail.thorns
-					p.title Crown of Thorns
-					p.hint "10 kills = heal"
-					ul.explanation
-						li Each time this item is picked up, the player takes 0.5 hearts of damage
-						li After killing 10 enemies while wearing this item, the character will be healed for 0.5 health
-						li If wearing this and using a blood-tier weapon, the character will be healed for 0.5 health after 5 kills instead of 10
-						li Removed from Aria's and Coda's pools
-			.thumbnail.jaw
-				span
-					.callout.thumbnail.jaw
-					p.title Glass Jaw
-					p.hint "Double all dmg, frailty"
-					ul.explanation
-						li While worn, all damage on the character's build is doubled
-						li While the Karate Gi doubles weapon damage, this item doubles the damage of the entire build
-							ul.explanation
-								li For example, if Cadence has Titanium Longsword + Ring of Might, their normal damage would be 3
-								li If you add only Karate Gi, their damage is 5 (4 longsword + 1 might)
-								li If you add only Glass Jaw, their damage is 6 (4 longsword + 2 might)
-								li If you add both Karate Gi and Glass Jaw, their damage is 10 (4*2=8 longsword + 2 might)
-						li Kills the character immediately when taking any damage
-							ul.explanation
-								li If a potion is equipped when taking damage, the potion will be used and the Glass Jaw will break
-			.thumbnail.helm
-				span
-					.callout.thumbnail.helm
-					p.title Helm
-					p.hint "+0.5 defense"
-					ul.explanation
-						li While worn, adds 0.5 hearts of defense to the character's armor stack
-						li No really, that's all it does
-			.thumbnail.miners
-				span
-					.callout.thumbnail.miners
-					p.title Miner's Cap
-					p.hint "Move + Dig"
-					ul.explanation
-						li While worn, adds +1 to dig strength and +1 to torch radius
-						li Digs as you move in a pattern similar to how Golden Lute attacking works, except it only applies to tiles adjacent to the destination tile, and does not affect tiles adjacent to the origin tile
-						li The diagram below refers to C1 as the starting tile, and C2 as the destination tile when moving
-					table
-						tr
-							td
-							td
-							td
-							td
-							td
-						tr
-							td
-							td
-							td.color
-							td
-							td
-						tr
-							td
-							td C1
-							td C2
-							td.color
-							td
-						tr
-							td 
-							td
-							td.color
-							td
-							td
-						tr
-							td 
-							td
-							td
-							td
-							td
-			.thumbnail.monocle
-				span
-					.callout.thumbnail.monocle
-					p.title Monocle
-					p.hint "See all items"
-					ul.explanation
-						li Shows all viewable items (bombs, exposed shop items) on the current floor on the overworld view
-						li Shows all unknown items (unopened chests, unopened crates/barrels/gargoyles) on the current floor on the overworld view
-						li Shows items that shrines will drop when bombed, depending on the current state of the shrine
-						li Shows all secret shop walls and travel runes (conjurer, arena, shriner, blood, transmogrifier, glass, food, pawnbroker) on the current floor
-						li Spirits (wights, ghasts, etc.) are immediately forced to spawn (not aggro) when picking up this item, or entering a level with this item
-
-			.thumbnail.sunglasses
-				span
-					.callout.thumbnail.sunglasses
-					p.title Sunglasses
-					p.hint "+1 Damage, Strange Vision"
-					ul.explanation
-						li While worn, adds +1 side damage
-						li While worn, silhouettes all enemies, NPCs, and barrels/crates/gargoyles
-						li Overrides and disables the "Always Show Enemy Hearts" option while worn
+				.thumbnail.monocle
+					span
+						.callout.thumbnail.monocle
+						p.title Monocle
+						p.hint "See all items"
+						ul.explanation
+							li Shows all viewable items (bombs, exposed shop items) on the current floor on the overworld view
+							li Shows all unknown items (unopened chests, unopened crates/barrels/gargoyles) on the current floor on the overworld view
+							li Shows items that shrines will drop when bombed, depending on the current state of the shrine
+							li Shows all secret shop walls and travel runes (conjurer, arena, shriner, blood, transmogrifier, glass, food, pawnbroker) on the current floor
+							li Spirits (wights, ghasts, etc.) are immediately forced to spawn (not aggro) when picking up this item, or entering a level with this item
+				.thumbnail.sunglasses
+					span
+						.callout.thumbnail.sunglasses
+						p.title Sunglasses
+						p.hint "+1 Damage, Strange Vision"
+						ul.explanation
+							li While worn, adds +1 side damage
+							li While worn, silhouettes all enemies, NPCs, and barrels/crates/gargoyles
+							li Overrides and disables the "Always Show Enemy Hearts" option while worn
 
 		.container.shovel
 
 			h2 Shovel
 
-			.thumbnail.base_shovel
-			.thumbnail.titanium_shovel
-			.thumbnail.obsidian_shovel
-			.thumbnail.glass_shovel
-			.thumbnail.glass_shard_shovel
-			.thumbnail.pickaxe
-			.thumbnail.crystal_shovel
-			.thumbnail.blood_shovel
+			.offset-wrapper
+
+				.thumbnail.base_shovel
+				.thumbnail.titanium_shovel
+				.thumbnail.obsidian_shovel
+				.thumbnail.glass_shovel
+				.thumbnail.glass_shard_shovel
+				.thumbnail.pickaxe
+				.thumbnail.crystal_shovel
+				.thumbnail.blood_shovel
 
 		.container.torch
 
 			h2 Torch
 
-			.thumbnail.base_torch
-				span
-					.callout.thumbnail.base_torch
-					p.title Obsidian Dagger
-					p.hint "Multiplier-based damage"
-					p.explanation Explanation goes here
-			.thumbnail.bright_torch
-			.thumbnail.obsidian_torch
-			.thumbnail.lum_torch
-			.thumbnail.glass_torch
-			.thumbnail.infernal_torch
-			.thumbnail.foresight_torch
+			.offset-wrapper
+
+				.thumbnail.base_torch
+					span
+						.callout.thumbnail.base_torch
+						p.title Obsidian Dagger
+						p.hint "Multiplier-based damage"
+						p.explanation Explanation goes here
+				.thumbnail.bright_torch
+				.thumbnail.obsidian_torch
+				.thumbnail.lum_torch
+				.thumbnail.glass_torch
+				.thumbnail.infernal_torch
+				.thumbnail.foresight_torch
 
 		.container.ring
 
 			h2 Ring
 
-			.thumbnail.becoming
-			.thumbnail.charisma
-			.thumbnail.courage
-			.thumbnail.gold
-			.thumbnail.luck
-			.thumbnail.mana
-			.thumbnail.might
-			.thumbnail.peace
-			.thumbnail.phasing
-			.thumbnail.protection
-			.thumbnail.regen
-			.thumbnail.shadows
-			.thumbnail.shielding
-			.thumbnail.war
-			.thumbnail.wonder
+			.offset-wrapper
+
+				.thumbnail.becoming
+				.thumbnail.charisma
+				.thumbnail.courage
+				.thumbnail.gold
+				.thumbnail.luck
+				.thumbnail.mana
+				.thumbnail.might
+				.thumbnail.peace
+				.thumbnail.phasing
+				.thumbnail.protection
+				.thumbnail.regen
+				.thumbnail.shadows
+				.thumbnail.shielding
+				.thumbnail.war
+				.thumbnail.wonder
 
 		.container.chest
 
 			h2 Body
 
-			.thumbnail.leather
-			.thumbnail.chainmail
-			.thumbnail.plate
-			.thumbnail.plate_dorian
-			.thumbnail.obsidian_armor
-			.thumbnail.hplate
-			.thumbnail.glass
-			.thumbnail.gi
+			.offset-wrapper
+
+				.thumbnail.leather
+				.thumbnail.chainmail
+				.thumbnail.plate
+				.thumbnail.plate_dorian
+				.thumbnail.obsidian_armor
+				.thumbnail.hplate
+				.thumbnail.glass
+				.thumbnail.gi
 
 		.container.boots
 
 			h2 Boots
 
-			.thumbnail.ballet
-			.thumbnail.explorers
-			.thumbnail.lead
-			.thumbnail.leaping
-			.thumbnail.lunging
-			.thumbnail.pain
-			.thumbnail.speed
-			.thumbnail.strength
-			.thumbnail.float
-			.thumbnail.greaves
+			.offset-wrapper
+
+				.thumbnail.ballet
+				.thumbnail.explorers
+				.thumbnail.lead
+				.thumbnail.leaping
+				.thumbnail.lunging
+				.thumbnail.pain
+				.thumbnail.speed
+				.thumbnail.strength
+				.thumbnail.float
+				.thumbnail.greaves

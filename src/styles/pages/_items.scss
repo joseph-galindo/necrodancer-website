@@ -32,8 +32,6 @@
 				display:inline-block;
 				cursor:pointer;
 
-				margin-top:35px;
-
 				span {
 					display:none;
 					position:fixed;
@@ -133,17 +131,17 @@
 				}
 			}
 
+			//margin-top offset container
+
+			.offset-wrapper {
+				margin-top:35px;
+			}
+
 			//attack container
 
 			&.attack {
 
 				.weapon-type-container {
-
-					&:nth-of-type(n+2) {
-						.thumbnail {
-							margin-top:0px;
-						}
-					}
 
 					font-size:0px;
 				}
